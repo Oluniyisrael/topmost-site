@@ -90,7 +90,7 @@ a:link{
     font-size: 40px;
     font-weight: 700;
 }
-#focusCont p {
+#focusContP {
     display: block;
     text-align: center;
     font-family: tahoma;
@@ -107,8 +107,16 @@ a:link{
     height: 400px;
     border: 1px solid black;
 }
+.flex1Det{
+    text-align: justify;
+    
+}
 .flex2{
     width: 30%;
     height: 400px;
     border: 1px solid black;
+}
+#flex1Detimg{
+    width: 100%;
+    height: 400px;
 }
