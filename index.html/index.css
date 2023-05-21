@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100%;
+    width: 100%;
+}
 .topnav{
     height: 50px;
     width: 100%;
@@ -62,7 +66,7 @@ a:link{
 /* This is the slider code */
 [data-component="slideshow"] .slide {
     display: none;
-    height: 500px;
+    /* height: 500px; */
 }
 
 [data-component="slideshow"] .slide.active {
@@ -71,4 +75,8 @@ a:link{
 .slide img{
     height: 600px;
     width: 100%;
+}
+.focus{
+    height: 100vh;
+
 }
