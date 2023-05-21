@@ -99,5 +99,16 @@ a:link{
 }
 .bannerFlex{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex1{
+    width: 60%;
+    height: 400px;
+    border: 1px solid black;
+}
+.flex2{
+    width: 30%;
+    height: 400px;
+    border: 1px solid black;
 }
