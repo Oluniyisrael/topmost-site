@@ -68,7 +68,6 @@ a:link{
     display: none;
     /* height: 500px; */
 }
-
 [data-component="slideshow"] .slide.active {
     display: block;
 }
@@ -77,6 +76,28 @@ a:link{
     width: 100%;
 }
 .focus{
+    padding: 2em;
     height: 100vh;
 
+}
+#foucsCont{
+    width: 100%;
+}
+#banner{
+    display: block;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 40px;
+    font-weight: 700;
+}
+#focusCont p {
+    display: block;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 34px;
+    font-weight: 500;
+}
+.bannerFlex{
+    display: flex;
+    justify-content: center;
 }
