@@ -135,6 +135,7 @@ a:link{
     font-family: tahoma;
     font-size: 40px;
     font-weight: 700;
+    padding:0 0 70px 0;
 }
 .acadInstCont{
     display: flex;
@@ -145,5 +146,31 @@ a:link{
 .acadInst{
     border: 1px solid black;
     width: 40%;
-    height: 200px;
+    height: 150px;
+    transition: 400ms;
+    /* padding: 20px; */
+}
+.acadInst:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.02);
+}
+.acadCont{
+
+    padding: 10px;
+    text-align: center;
+}
+.info{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.acadInstImg{
+    height: 100px;
+    width: 200px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+.acadCont p{
+    width: 100%;
+    text-align: justify;
 }
