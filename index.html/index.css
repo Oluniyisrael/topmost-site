@@ -200,6 +200,8 @@ a:link{
 }
 .footer{
     width: 100%;
+    background: #1E2F23;
+    color: white;
 }
 .footnote{
     text-align: center;
