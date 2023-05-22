@@ -9,19 +9,21 @@ body{
     width: 100%;
 }
 .topnav{
-    position: sticky;
     height: 50px;
     width: 100%;
     background-color:#6a8e84;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 0;
 }
-.topnav.fixed {
+#navbar.fixed {
     /* Styles when navbar becomes fixed */
     position: fixed;
     top: 0;
     z-index: 100;
+    width: 100%;
   }
 .topnav div{
     color: white;

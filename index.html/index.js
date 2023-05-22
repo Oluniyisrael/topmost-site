@@ -56,7 +56,7 @@ function initSlideShow(slideshow) {
   }, time);
 }
 window.addEventListener('scroll', ()=> {
-  var navbar = document.getElementsByClassName('topnav2');
+  var navbar = document.getElementById('navbar');
   var navbarOffsetTop = navbar.offsetTop;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   
