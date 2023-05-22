@@ -179,4 +179,29 @@ a:link{
 .thePrincipal{
     height: 400px;
     background: #a15d48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: tahoma;
+}
+.prinCont{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.textCont h2{
+    padding: 20px 0;
+    font-size: 30px;
+}
+.textCont p{
+    padding: 0 0 10px 0;
+}
+.footer{
+    width: 100%;
+}
+.footnote{
+    text-align: center;
+    font-family: tahoma;
 }
