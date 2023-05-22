@@ -55,3 +55,14 @@ function initSlideShow(slideshow) {
 
   }, time);
 }
+window.addEventListener('scroll', ()=> {
+  var navbar = document.getElementsByClassName('topnav2');
+  var navbarOffsetTop = navbar.offsetTop;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollTop > navbarOffsetTop) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+});
