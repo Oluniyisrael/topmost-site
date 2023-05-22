@@ -127,3 +127,23 @@ a:link{
     width: 100%;
     height: 400px;
 }
+.academics{
+    height: 100vh;
+}
+.academics h2{
+    text-align: center;
+    font-family: tahoma;
+    font-size: 40px;
+    font-weight: 700;
+}
+.acadInstCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.acadInst{
+    border: 1px solid black;
+    width: 40%;
+    height: 200px;
+}
