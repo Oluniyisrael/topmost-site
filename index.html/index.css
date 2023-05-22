@@ -129,13 +129,14 @@ a:link{
 }
 .academics{
     height: 100vh;
+    background: #6a8e84;
 }
 .academics h2{
     text-align: center;
     font-family: tahoma;
     font-size: 40px;
     font-weight: 700;
-    padding:0 0 70px 0;
+    padding:70px 0 70px 0;
 }
 .acadInstCont{
     display: flex;
@@ -144,7 +145,7 @@ a:link{
     gap: 40px;
 }
 .acadInst{
-    border: 1px solid black;
+    border: 2px solid#a15d48;
     width: 40%;
     height: 150px;
     transition: 400ms;
@@ -153,6 +154,7 @@ a:link{
 .acadInst:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transform: scale(1.02);
+    border: 5px solid#a15d48;
 }
 .acadCont{
 
@@ -173,4 +175,8 @@ a:link{
 .acadCont p{
     width: 100%;
     text-align: justify;
+}
+.thePrincipal{
+    height: 400px;
+    background: #a15d48;
 }
