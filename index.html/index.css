@@ -117,7 +117,7 @@ a:link{
     align-items: center;
 }
 .flex1{
-    width: 60%;
+    width: 50%;
     height: 400px;
     border: 1px solid black;
 }
@@ -197,10 +197,16 @@ a:link{
     font-family: tahoma;
 }
 .prinCont{
-    width: 60%;
+
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
     align-items: center;
+}
+.prinCont img{
+    height: 250px;
+    width: 270px;
 }
 .textCont h2{
     padding: 20px 0;
@@ -208,6 +214,7 @@ a:link{
 }
 .textCont p{
     padding: 0 0 10px 0;
+    text-align: justify;
 }
 .footer{
     width: 100%;
