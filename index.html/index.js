@@ -58,7 +58,7 @@ function initSlideShow(slideshow) {
 window.addEventListener('scroll', ()=> {
   var navbar = document.getElementById('navbar');
   var navbarDis = document.getElementById('navbar2');
-  var navbarOffsetTop = navbar.offsetTop + 400;
+  var navbarOffsetTop = navbar.offsetTop + 100;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop ;
   
   if (scrollTop > navbarOffsetTop) {
