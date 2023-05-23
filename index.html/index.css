@@ -230,3 +230,43 @@ a:link{
     font-size: 15px;
     font-family: tahoma;
 }
+.topnav2Dis{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0d9bc;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    animation: fadeIn 1s;
+ }
+ .topnav2Dis div{
+    width: 90%;
+    display: flex;
+ }
+ .topnav2Dis div img{
+    width: 500px;
+    height: 70px;
+}
+.topnav2Dis div ul{
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.topnav2Dis div ul li{
+    display: inline-block;
+    list-style-type: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: tahoma;
+}
+
+
+/* animations */
+@keyframes fadeIn {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}

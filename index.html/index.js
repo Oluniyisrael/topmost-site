@@ -57,12 +57,13 @@ function initSlideShow(slideshow) {
 }
 window.addEventListener('scroll', ()=> {
   var navbar = document.getElementById('navbar');
-  var navbarOffsetTop = navbar.offsetTop;
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var navbarDis = document.getElementById('navbar2');
+  var navbarOffsetTop = navbar.offsetTop + 400;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop ;
   
   if (scrollTop > navbarOffsetTop) {
-    navbar.classList.add('fixed');
+    navbarDis.style.display ='flex';
   } else {
-    navbar.classList.remove('fixed');
+    navbarDis.style.display ='none';
   }
 });
