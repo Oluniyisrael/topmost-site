@@ -80,13 +80,7 @@ a:link{
     font-family: cursive;
 }
 .topnav2, .topnav2Dis a:link{
-    color: #1E2F23;
-}
-.topnav2, .topnav2Dis a:visited{
-    color: #1E2F23;
-}
-.topnav2, .topnav2Dis a:hover{
-    color: #6a8e84;
+    text-decoration: none;
 }
 .topnav2Dis{
     display: none;
