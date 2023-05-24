@@ -75,6 +75,53 @@ a:link{
     font-size: 20px;
     font-family: tahoma;
 }
+.topnav2, .topnav2Dis a{
+    color: #1E2F23;
+    font-family: cursive;
+}
+.topnav2, .topnav2Dis a:link{
+    color: #1E2F23;
+}
+.topnav2, .topnav2Dis a:visited{
+    color: #1E2F23;
+}
+.topnav2, .topnav2Dis a:hover{
+    color: #6a8e84;
+}
+.topnav2Dis{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0d9bc;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    animation: fadeIn 1s;
+ }
+ .topnav2Dis div{
+    width: 90%;
+    display: flex;
+ }
+ .topnav2Dis div img{
+    width: 500px;
+    height: 70px;
+}
+.topnav2Dis div ul{
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.topnav2Dis div ul li{
+    display: inline-block;
+    list-style-type: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: tahoma;
+}
 /* This is the slider code */
 [data-component="slideshow"] .slide {
     display: none;
@@ -181,12 +228,34 @@ a:link{
 
 }
 .acadInstImg{
+
     height: 100px;
     width: 200px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 .acadCont p{
     width: 100%;
     text-align: justify;
+}
+#staffs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:cursive ;
+    font-size: 20px;
+    color: #1E2F23;
+}
+#staffCont{
+    width: 700px;
+}
+#staffCont img{
+    border: 2px solid#a15d48;
+    width: 700px;
+}
+#staffCont p{
+    padding:30px;
+    text-align: center;
 }
 .thePrincipal{
     height: 400px;
@@ -238,40 +307,7 @@ a:link{
     font-size: 15px;
     font-family: tahoma;
 }
-.topnav2Dis{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0d9bc;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-    animation: fadeIn 1s;
- }
- .topnav2Dis div{
-    width: 90%;
-    display: flex;
- }
- .topnav2Dis div img{
-    width: 500px;
-    height: 70px;
-}
-.topnav2Dis div ul{
-    width:50% ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.topnav2Dis div ul li{
-    display: inline-block;
-    list-style-type: none;
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
-    font-family: tahoma;
-}
+
 
 
 /* animations */
