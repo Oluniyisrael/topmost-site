@@ -104,3 +104,24 @@ a:link{
     font-size: 20px;
     font-family: tahoma;
 }
+.topnav2 a, .topnav2Dis a{
+    color: #1E2F23;
+    font-family: cursive;
+    transition: 500ms;
+}
+.topnav2 a:link:hover, .topnav2Dis a:link:hover{
+    text-decoration: underline;
+    color: #945045;
+}
+.topnav2 a:visited:hover, .topnav2Dis a:visited:hover{
+    text-decoration: underline;
+    color: #945045;
+}
+.topnav2 a:link, .topnav2Dis a:link{
+    text-decoration: none;
+    color: #43a360;
+}
+.topnav2 a:visited, .topnav2Dis a:visited{
+    text-decoration: none;
+    color: #43a360;
+}

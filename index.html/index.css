@@ -206,6 +206,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    position: relative;
+    overflow: hidden;
 }
 .acadInst{
     border: 2px solid#a15d48;
@@ -217,7 +219,7 @@ body{
 .acadInst:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transform: scale(1.02);
-    border: 5px solid#a15d48;
+    border: 3px solid #a15d48;
 }
 .acadCont{
 
