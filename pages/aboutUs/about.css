@@ -125,3 +125,37 @@ a:link{
     text-decoration: none;
     color: #43a360;
 }
+#hBack{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 200px;
+    width:100%;
+    background: linear-gradient(to right, #1E2F23, #945045,#945045);
+}
+#hBack h2{
+    margin-top: 50px;
+    font-family: cursive;
+    font-size: 30px;
+    color: #6a8e84;
+}
+.about{
+    display: flex;
+    gap: 20px;
+
+    padding: 2em;
+}
+#theProp{
+
+}
+.about img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #945045;
+    border-radius: 30px;
+}
+.about p {
+    font-family: cursive;
+    color: ;    
+}
