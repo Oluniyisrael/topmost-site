@@ -18,13 +18,13 @@ body{
     position: relative;
     top: 0;
 }
-#navbar.fixed {
-    /* Styles when navbar becomes fixed */
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-  }
+
+.topnav a:link{
+    color: #e0d9bc;
+}
+.topnav a:visited{
+    color: #e0d9bc;
+}
 .topnav div{
     color: white;
     width: 80%;
@@ -33,11 +33,6 @@ body{
 .topnav div span{
     border-right:2px solid #945045;
 }
-a:link{
-    color: wheat;
- } a:visited{
-    color: wheat;
- }
  .topnav button{
     border: none;
     font-size: 20px;
@@ -74,13 +69,40 @@ a:link{
     height: 40px;
     font-size: 20px;
     font-family: tahoma;
-} .topnav2Dis{
-    display: flex;
+}
+.topnav2Dis{
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #e0d9bc;
     position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    animation: fadeIn 1s;
  }
+.topnav2 a, .topnav2Dis a{
+    color: #1E2F23;
+    font-family: cursive;
+    transition: 500ms;
+}
+.topnav2 a:link:hover, .topnav2Dis a:link:hover{
+    text-decoration: underline;
+    color: #945045;
+}
+.topnav2 a:visited:hover, .topnav2Dis a:visited:hover{
+    text-decoration: underline;
+    color: #945045;
+}
+.topnav2 a:link, .topnav2Dis a:link{
+    text-decoration: none;
+    color: #43a360;
+}
+.topnav2 a:visited, .topnav2Dis a:visited{
+    text-decoration: none;
+    color: #43a360;
+}
+
  .topnav2Dis div{
     width: 90%;
     display: flex;
@@ -103,27 +125,6 @@ a:link{
     height: 40px;
     font-size: 20px;
     font-family: tahoma;
-}
-.topnav2 a, .topnav2Dis a{
-    color: #1E2F23;
-    font-family: cursive;
-    transition: 500ms;
-}
-.topnav2 a:link:hover, .topnav2Dis a:link:hover{
-    text-decoration: underline;
-    color: #945045;
-}
-.topnav2 a:visited:hover, .topnav2Dis a:visited:hover{
-    text-decoration: underline;
-    color: #945045;
-}
-.topnav2 a:link, .topnav2Dis a:link{
-    text-decoration: none;
-    color: #43a360;
-}
-.topnav2 a:visited, .topnav2Dis a:visited{
-    text-decoration: none;
-    color: #43a360;
 }
 #horizontalRule{
     border: 1px inset #fff7f7bd;
@@ -194,4 +195,9 @@ a:link{
     list-style-type: none;
     font-size: 15px;
     font-family: tahoma;
+}
+/* animations */
+@keyframes fadeIn {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
