@@ -126,11 +126,70 @@ font-size: 20px;
 font-family: tahoma;
 }
 /* start work*/
+#hBack{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 200px;
+    width:100%;
+    background: linear-gradient(to right, #1E2F23, #945045,#945045);
+}
+#hBack h2{
+    margin-top: 50px;
+    font-family: cursive;
+    font-size: 30px;
+    color: #6a8e84;
+}
+.container{
+        display: flex;
+        gap: 20px;
+        padding: 2em;
+}
+.container img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border: 5px solid #945045;
+        border-radius: 30px;
+    }
 #academics{
     height: 200vh;
+    padding: 3em 0;
 }
-
-
+#academicsCont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* justify-content: center; */
+    align-items: center;
+}
+#academicsCont h2{
+    text-align: center;
+    margin: 0;
+    font-family: tahoma;
+    color: #945045;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    justify-content: space-between;
+}
+#apply{
+        width: 180px;
+        align-self: end;
+        padding: 10px;
+        font-style: oblique;
+        font-family: monospace;
+        font-size: 20px;
+        background: #945045;
+        border: none;
+        border-radius: 10px;
+        color: floralwhite;
+        cursor: pointer;
+    
+}
 /* end work*/
 .footer{
     width: 100%;
