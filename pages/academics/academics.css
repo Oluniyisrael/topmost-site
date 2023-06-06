@@ -152,6 +152,23 @@ font-family: tahoma;
         border: 5px solid #945045;
         border-radius: 30px;
     }
+    #imgConta{
+        align-self: end;
+        width: 180px;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        
+    }
+    #buttonHand {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border: none;
+        border-radius: 0px;
+        animation: floating 2s infinite;
+        position: absolute;
+    }
 #academics{
     height: 200vh;
     padding: 3em 0;
@@ -221,4 +238,9 @@ font-family: tahoma;
 @keyframes fadeIn {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
+}
+@keyframes floating{
+    0%{margin-top: -20px;}
+    50%{margin-top: 0em;}
+    100%{margin-top: -20px;}
 }
