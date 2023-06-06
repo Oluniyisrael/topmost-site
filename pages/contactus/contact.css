@@ -140,8 +140,63 @@ font-family: tahoma;
     color: #6a8e84;
 }
     /* start work*/
+#Heading{
+    padding: 3em 0 0 0;
+    font-family: sans-serif;}
 .contactUs{
-    height: 120vh;
+    height: 100vh;
+}
+.contactUsCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#cards{
+    display: flex;
+    gap: 20px;
+    padding: 10em 0 0 0;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+.card {
+    background-color: #43a360;
+    color: #000;
+    font-family: tahoma;
+    width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .connectionTab{
+    background-color: white;
+    width: 250px;
+    height: 220px;
+    margin: 2em;
+    color: black;
+    font-family: tahoma;
+} */
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-top: -80px;
+}
+.card button{
+    margin: 2em;
+    width: 150px;
+    background-color: rgb(163, 165, 42);
+    outline: none;
+    border:1px solid black;
+    padding: 1em;
+    cursor: pointer;
+    transition: 400ms;
+}
+.card button:hover {
+    transform: scale(1.06);
+    color: gold;
+    box-shadow:0px 0px 10px 4px grey
 }
 
     /* end work*/
