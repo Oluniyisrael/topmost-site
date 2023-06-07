@@ -187,13 +187,15 @@ font-family: tahoma;
         width: 100%;
         backdrop-filter: blur(10px);
     }
-    .applicationForm{
+    #applicationForm{
         background: linear-gradient(180deg,#8e8787,#754400d6,#754400ba);
         border-radius: 40px;
         box-shadow: 0 0 17px 2px #1d032ab8;
         flex-wrap: wrap;
         height: 15em;
         width: 20em;
+        height: 80%;
+        padding:20px;
     }
 #academics{
     height: 200vh;
