@@ -165,9 +165,35 @@ font-family: tahoma;
         height: 55px;
         object-fit: cover;
         border: none;
+        z-index: -1;
         border-radius: 0px;
         animation: floating 2s infinite;
         position: absolute;
+    }
+    .applyModal{
+        /* display:none; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999999;
+        background-color: #000000b0;
+        animation: fadeIn 0.5s ;
+        height: 100vh;
+        width: 100%;
+        backdrop-filter: blur(10px);
+    }
+    .applicationForm{
+        background: linear-gradient(180deg,#8e8787,#754400d6,#754400ba);
+        border-radius: 40px;
+        box-shadow: 0 0 17px 2px #1d032ab8;
+        flex-wrap: wrap;
+        height: 15em;
+        width: 20em;
     }
 #academics{
     height: 200vh;
@@ -193,7 +219,7 @@ font-family: tahoma;
     height: 260px;
     justify-content: space-between;
 }
-#apply{
+.apply{
         width: 180px;
         align-self: end;
         padding: 10px;
