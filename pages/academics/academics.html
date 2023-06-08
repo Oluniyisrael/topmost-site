@@ -47,57 +47,30 @@
     <div id="hBack">
       <h2> Academics</h2>
   </div>
+  <!-- Form -->
   <section class="applyModal" id="modal">
     <form id="applicationForm">
-      <div>
+      <div id="Heading">
+        <img src="../../images/something.png" alt="" id="logo">
+        <h2 id="formH2">Topmost School form</h2>
+      </div>
+      <div id="nameCont">
         <input type="text" id="firstName" placeholder="Firstname">
         <input type="text" id="middletName" placeholder="Middlename">
         <input type="text" id="lastName" placeholder="Lastname">
+        
       </div>
       <!-- <input type="button" value="submit"> -->
-
-      <select name="sectionSlt" id="sectionSlt" title="for type of classes" 
-      onchange="changeSection()" 
-      >
-        <option value="1">Nursery</option>
-        <option value="2">Primary</option>
-        <option value="3">Secondary</option>
-        <option value="4" disabled >Bording</option>
-      </select>
-
-      <span>
-          <select name="classSlt" id="classSlt" class="nurserySlt" title="for classes">
-            <option value="1" class="nursery">Nursery 1</option>
-            <option value="2" class="nursery">Nursery 2</option>
-            <option value="3" class="nursery">Nursery 3</option>
-          </select>
-          <select name="classSlt" id="classSlt" class="primarySlt" title="for classes">
-            <option value="1" class="primary">Primary 1</option>
-            <option value="2" class="primary">Primary 2</option>
-            <option value="3" class="primary">Primary 3</option>
-            <option value="4" class="primary">Primary 4</option>
-            <option value="5" class="primary">Primary 5</option>
-            <option value="6" class="primary">Primary 6</option>
-          </select>
-          <select name="classSlt" id="classSlt" class="secondarySlt" title="for classes">
-            <option value="1" class="secondary">Junior secondary 1</option>
-            <option value="2" class="secondary">Junior secondary 2</option>
-            <option value="3" class="secondary">Junior secondary 3</option>
-            <option value="4" class="secondary">Senior secondary 1</option>
-            <option value="5" class="secondary">Senior secondary 2</option>
-            <option value="6" class="secondary">Senior secondary 3</option>        
-          </select>
-        </span>
-        <p>State</p> 
-        <select name="sex" id="sex">
-          <option value="Abia">Abia</option>
-          <option value="Adamawa">Adamawa</option>
-          <option value="Akwa Ibom">Akwa Ibom</option>
-          <option value="Anambra">Anambra</option>
-          <option value="Bauchi">Bauchi</option>
-          <option value="Bayelsa">Bayelsa</option>
-          <option value="Benue">Benue</option>
-          <option value="Borno">Borno</option>
+      <p>State</p> 
+      <select name="state" id="state">
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
+        <option value="Akwa Ibom">Akwa Ibom</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Bauchi">Bauchi</option>
+        <option value="Bayelsa">Bayelsa</option>
+        <option value="Benue">Benue</option>
+        <option value="Borno">Borno</option>
           <option value="Cross River">Cross River</option>
           <option value="Delta">Delta</option>
           <option value="Ebonyi">Ebonyi</option>
@@ -130,15 +103,57 @@
         </select>
         <p>Date of birth</p>
         <input type="date" name="DOB" id="DOB" >
+        <p>Place of birth</p>
+        <input type="text" name="" id="">
         <p>Sex</p> 
         <select name="sex" id="sex">
           <option value="1">Male</option>
           <option value="2">Female</option>
           <option value="3" title="we dont do that here" disabled>Transgender</option>
         </select>
+        <p>Religion</p>
+        <select name="religion" id="religion">
+          <option value="1">Christian</option>
+          <option value="2">Muslim</option>
+          <option value="3" title="we dont do that here" disabled>Pagan</option>
+        </select>
+        <div id=" schoolSectionContainer">
+          <p>Select class</p>
+          <select name="sectionSlt" id="sectionSlt" title="for type of classes" onchange="changeSection()" >
+            <option value="1">Nursery</option>
+            <option value="2">Primary</option>
+            <option value="3">Secondary</option>
+            <option value="4" disabled >Bording</option>
+          </select>
+    
+            <span>
+              <select name="classSlt" id="classSlt" class="nurserySlt" title="for classes">
+                <option value="Nursery 1" class="nursery">Nursery 1</option>
+                <option value="Nursery 2" class="nursery">Nursery 2</option>
+                <option value="Nursery 3" class="nursery">Nursery 3</option>
+              </select>
+              <select name="classSlt" id="classSlt" class="primarySlt" title="for classes">
+                <option value=" 1" class="primary">Primary 1</option>
+                <option value="Primary 2" class="primary">Primary 2</option>
+                <option value="Primary 2" class="primary">Primary 3</option>
+                <option value="Primary 2" class="primary">Primary 4</option>
+                <option value="Primary 2" class="primary">Primary 5</option>
+                <option value="Primary 2" class="primary">Primary 6</option>
+              </select>
+              <select name="classSlt" id="classSlt" class="secondarySlt" title="for classes">
+                <option value="JS 1" class="secondary">Junior secondary 1</option>
+                <option value="JS 2" class="secondary">Junior secondary 2</option>
+                <option value="JS 3" class="secondary">Junior secondary 3</option>
+                <option value="JS 4" class="secondary">Senior secondary 1</option>
+                <option value="JS 5" class="secondary">Senior secondary 2</option>
+                <option value="JS 6" class="secondary">Senior secondary 3</option>        
+              </select>
+            </span>
+        </div>
 
     </form>
   </section>
+    <!-- Form -->
     <section id="academics" title="In case you couldnt see, the page is empty">
       <div id="academicsCont">
         <h2>Nursery</h2>
