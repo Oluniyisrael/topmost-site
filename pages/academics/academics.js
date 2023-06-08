@@ -15,19 +15,19 @@ function changeSection() {
    var sectionType = document.getElementById('sectionSlt').selectedOptions[0].value;
 
 if (sectionType == 1) {
-   nursery[0].style.display = 'block' 
+   nursery[0].style.display = 'inline' 
    primary[0].style.display = 'none' 
    secondary[0].style.display = 'none' 
 
 }
 else if (sectionType == 2){
    nursery[0].style.display = 'none' 
-   primary[0].style.display = 'block' 
+   primary[0].style.display = 'inline' 
 
 }
 else if(sectionType == 3 ){
    primary[0].style.display = 'none' 
-   secondary[0].style.display = 'block' 
+   secondary[0].style.display = 'inline' 
 
 }
 }
