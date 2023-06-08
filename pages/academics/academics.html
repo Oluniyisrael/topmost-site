@@ -49,7 +49,7 @@
   </div>
   <!-- Form -->
   <section class="applyModal" id="modal">
-    <form id="applicationForm">
+    <form id="applicationForm" onsubmit="(e)=>{e.preventDefault()}">
       <div id="Heading" class="formInputSects">
         <img src="../../images/something.png" alt="" id="logo">
         <h2 id="formH2">Topmost School form</h2>
@@ -163,7 +163,7 @@
           </div>
         </div>
         <div id="btnCont">
-          <button id="submitBtn">Accept and proceed to payment --></button>
+          <button id="submitBtn" type="button" onsubmit="(e)=>{e.preventDefault()}" onclick="printPage()">Accept and proceed to payment --></button>
         </div>
 
 

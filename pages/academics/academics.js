@@ -39,3 +39,7 @@ window.onclick = function(e) {
      modal.style.display = "none";
    }
  }
+ function printPage() {
+   // First check if all the inputs are filled, also add a pasport photograph input for child Image, and lastly we need a copy of the form and the receipt after we have paid the fees  
+   window.print()
+ }

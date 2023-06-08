@@ -379,3 +379,17 @@ font-family: tahoma;
     50%{margin-top: 0em;}
     100%{margin-top: -20px;}
 }
+@media print {
+    #academics{
+     display:none
+    }
+    #modal{
+        display: flex;
+    }
+    #applicationForm{
+        height: 90%;
+    }
+    #btnCont{
+        display: none;
+    }
+    }
