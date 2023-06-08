@@ -197,6 +197,12 @@ font-family: tahoma;
         height: 80%;
         padding:20px;
     }
+    .primarySlt{
+        display: none;
+    }
+    .secondarySlt{
+        display: none;
+    }
 #academics{
     height: 200vh;
     padding: 3em 0;
