@@ -276,6 +276,10 @@ font-family: tahoma;
     .formInputSects{
         padding: 20px 0;
     }
+    #schoolSectionContainerFF{
+        display: flex;
+        gap: 20px;
+    }
 #academics{
     height: 200vh;
     padding: 3em 0;
