@@ -50,17 +50,17 @@
   <!-- Form -->
   <section class="applyModal" id="modal">
     <form id="applicationForm">
-      <div id="Heading">
+      <div id="Heading" class="formInputSects">
         <img src="../../images/something.png" alt="" id="logo">
         <h2 id="formH2">Topmost School form</h2>
       </div>
-      <div id="nameCont">
+      <div id="nameCont" class="formInputSects">
         <input type="text" id="firstName" placeholder="Firstname">
         <input type="text" id="middletName" placeholder="Middlename">
         <input type="text" id="lastName" placeholder="Lastname">
       </div>
       <!-- <input type="button" value="submit"> -->
-      <div id="state">
+      <div id="state" class="formInputSects">
         <p>State</p> 
         <select name="state" id="state">
           <option value="Abia">Abia</option>
@@ -102,23 +102,31 @@
             <option value="Zamfara">Zamfara</option>
         </select>
       </div>
+      <div id="DOBcont" class="formInputSects">
         <p>Date of birth</p>
         <input type="date" name="DOB" id="DOB" >
+      </div>
+      <div id="POB" class="formInputSects">
         <p>Place of birth</p>
         <input type="text" name="" id="">
+      </div>
+      <div id="sex" class="formInputSects">
         <p>Sex</p> 
         <select name="sex" id="sex">
           <option value="1">Male</option>
           <option value="2">Female</option>
           <option value="3" title="we dont do that here" disabled>Transgender</option>
         </select>
+      </div>
+      <div id="religion" class="formInputSects">
         <p>Religion</p>
         <select name="religion" id="religion">
           <option value="1">Christian</option>
           <option value="2">Muslim</option>
           <option value="3" title="we dont do that here" disabled>Pagan</option>
         </select>
-        <div id=" schoolSectionContainer">
+      </div>
+        <div id=" schoolSectionContainer" class="formInputSects">
           <p>Select class</p>
           <select name="sectionSlt" id="sectionSlt" title="for type of classes" onchange="changeSection()" >
             <option value="1">Nursery</option>
