@@ -190,8 +190,8 @@ font-family: tahoma;
         font-size: 50px;
     }
     .applyModal{
-        /* display:none; */
-        display: flex;
+        display:none;
+        /* display: flex; */
         justify-content: center;
         align-items: center;
         position: fixed;
@@ -206,7 +206,11 @@ font-family: tahoma;
         width: 100%;
         backdrop-filter: blur(10px);
     }
-    
+    #nameCont{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
 
 
 #applicationForm::-webkit-scrollbar {
@@ -226,11 +230,6 @@ font-family: tahoma;
     /* background: linear-gradient(left, #212121, #323232); */
     box-shadow: 0 0 1px 1px #111;
 }
-    #nameCont{
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
     #applicationForm{
         background: linear-gradient(180deg,#8e8787,#754400d6,#754400ba);
         border-radius: 40px;
@@ -241,6 +240,8 @@ font-family: tahoma;
         height: 80%;
         padding:20px;
         overflow-y: scroll;
+        z-index: 99999999;
+
     }
     #applicationForm input{
     font-size: 1em;

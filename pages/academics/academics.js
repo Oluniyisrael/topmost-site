@@ -8,7 +8,7 @@ var secondary = document.getElementsByClassName('secondarySlt');
 
 for (let i = 0; i < 4; i++) {
    apply[i].addEventListener('click',()=>{
-      modal.style.display = 'block'
+      modal.style.display = 'flex'
    })  
 }
 function changeSection() {
@@ -33,10 +33,9 @@ else if(sectionType == 3 ){
 }
 }
 
-// for (let i = 0; i < 6; i++) {
-//    document.getElementsByClassName('secondary')[i].style.display = 'none'
-//    }
-   
-// modal.addEventListener('click',()=>{
-//     modal.style.display='none'
-// })
+
+window.onclick = function(e) {
+   if (e.target == modal) {
+     modal.style.display = "none";
+   }
+ }
