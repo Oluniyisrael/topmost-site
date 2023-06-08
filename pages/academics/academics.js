@@ -23,9 +23,10 @@ if (sectionType == 1) {
 else if (sectionType == 2){
    nursery[0].style.display = 'none' 
    primary[0].style.display = 'inline' 
-
+   secondary[0].style.display = 'none' 
 }
 else if(sectionType == 3 ){
+   primary[0].style.display = 'none' 
    primary[0].style.display = 'none' 
    secondary[0].style.display = 'inline' 
 
