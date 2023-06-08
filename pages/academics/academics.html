@@ -49,8 +49,37 @@
   </div>
   <section class="applyModal" id="modal">
     <form id="applicationForm">
-      <input type="text"><input type="button" value="submit">
-      <select name="" id=""></select>
+      <div>
+        <input type="text" id="firstName" placeholder="Firstname">
+        <input type="text" id="middletName" placeholder="Middlename">
+        <input type="text" id="lastName" placeholder="Lastname">
+      </div>
+      <!-- <input type="button" value="submit"> -->
+
+      <select name="sectionSlt" id="sectionSlt">
+        <option value="1">Nursery</option>
+        <option value="2">Primary</option>
+        <option value="3">Secondary</option>
+        <option value="4" disabled >Bording</option>
+      </select>
+
+      <select name="classSlt" id="classSlt">
+        <option value="1" class="nursery">Nursery 1</option>
+        <option value="2" class="nursery">Nursery 2</option>
+        <option value="3" class="nursery">Nursery 3</option>
+        <option value="1" class="primary">Primary 1</option>
+        <option value="2" class="primary">Primary 2</option>
+        <option value="3" class="primary">Primary 3</option>
+        <option value="4" class="primary">Primary 4</option>
+        <option value="5" class="primary">Primary 5</option>
+        <option value="6" class="primary">Primary 6</option>
+        <option value="1" class="secondary">Junior secondary 1</option>
+        <option value="2" class="secondary">Junior secondary 2</option>
+        <option value="3" class="secondary">Junior secondary 3</option>
+        <option value="4" class="secondary">Senior secondary 1</option>
+        <option value="5" class="secondary">Senior secondary 2</option>
+        <option value="6" class="secondary">Senior secondary 3</option>
+      </select>
     </form>
   </section>
     <section id="academics" title="In case you couldnt see, the page is empty">
