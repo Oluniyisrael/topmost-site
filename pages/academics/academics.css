@@ -211,6 +211,29 @@ font-family: tahoma;
         gap: 20px;
         justify-content: center;
     }
+    #btnCont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #submitBtn{
+        font-size: 1em;
+        outline: none;
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px;
+        font-family: cursive;
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+        transition: 400ms;
+        }
+    #submitBtn:hover{
+        background-color: #945045;
+        color: white;
+    }
 
 
 #applicationForm::-webkit-scrollbar {
@@ -280,6 +303,7 @@ font-family: tahoma;
         display: flex;
         gap: 20px;
     }
+    
 #academics{
     height: 200vh;
     padding: 3em 0;
