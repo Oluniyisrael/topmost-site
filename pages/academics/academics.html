@@ -65,6 +65,7 @@
         <p>State</p> 
         <div id="schoolSectionContainerFF">
         <select name="state" id="state" onchange="findSelected()">
+          <option disabled selected>Select state</option>
           <option value="1">Abia</option>
           <option value="2">Adamawa</option>
           <option value="3">Akwa Ibom</option>
@@ -111,11 +112,11 @@
         <p>Date of birth</p>
         <input type="date" name="DOB" id="DOB" >
       </div>
-      <div id="POB" class="formInputSects">
+      <div id="POBc" class="formInputSects">
         <p>Place of birth</p>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="POB">
       </div>
-      <div id="sex" class="formInputSects">
+      <div id="sexc" class="formInputSects">
         <p>Sex</p> 
         <select name="sex" id="sex">
           <option value="1">Male</option>
@@ -123,7 +124,7 @@
           <option value="3" title="we dont do that here" disabled>Transgender</option>
         </select>
       </div>
-      <div id="religion" class="formInputSects">
+      <div id="religionc" class="formInputSects">
         <p>Religion</p>
         <select name="religion" id="religion">
           <option value="1">Christian</option>
@@ -149,12 +150,12 @@
                   <option value="Nursery 3" class="nursery">Nursery 3</option>
                 </select>
                 <select name="classSlt" id="classSlt" class="primarySlt" title="for classes">
-                  <option value=" 1" class="primary">Primary 1</option>
+                  <option value=" Primary 1" class="primary">Primary 1</option>
                   <option value="Primary 2" class="primary">Primary 2</option>
-                  <option value="Primary 2" class="primary">Primary 3</option>
-                  <option value="Primary 2" class="primary">Primary 4</option>
-                  <option value="Primary 2" class="primary">Primary 5</option>
-                  <option value="Primary 2" class="primary">Primary 6</option>
+                  <option value="Primary 3" class="primary">Primary 3</option>
+                  <option value="Primary 4" class="primary">Primary 4</option>
+                  <option value="Primary 5" class="primary">Primary 5</option>
+                  <option value="Primary 6" class="primary">Primary 6</option>
                 </select>
                 <select name="classSlt" id="classSlt" class="secondarySlt" title="for classes">
                   <option value="JS 1" class="secondary">Junior secondary 1</option>

@@ -6,6 +6,17 @@ var primary = document.getElementsByClassName('primarySlt');
 var secondary = document.getElementsByClassName('secondarySlt');
 // var stateCity = document.getElementById('state').selectedOptions[0].value;
 // var lga = document.getElementById('lga');
+var firstName = document.getElementById('firstName').value
+var middleName = document.getElementById('middletName').value
+var lastName = document.getElementById('lastName').value
+var state = document.getElementById('state').selectedOptions[0].value
+// var lga = document.getElementById('lga').selectedOptions[0].value
+var date = document.getElementById('DOB').value
+var POB  = document.getElementById('POB').value
+var sex = document.getElementById('sex').value
+var religion  = document.getElementById('religion').value
+var sectionSlt = document.getElementById('sectionSlt').value
+
 
 for (let i = 0; i < 4; i++) {
    apply[i].addEventListener('click',()=>{
@@ -27,7 +38,7 @@ else if (sectionType == 2){
    secondary[0].style.display = 'none' 
 }
 else if(sectionType == 3 ){
-   primary[0].style.display = 'none' 
+   nursery[0].style.display = 'none' 
    primary[0].style.display = 'none' 
    secondary[0].style.display = 'inline' 
 
@@ -80,9 +91,34 @@ window.onclick = function(e) {
    }
  }
  function printPage() {
-   // First check if all the inputs are filled, also add a pasport photograph input for child Image, and lastly we need a copy of the form and the receipt after we have paid the fees
-   // if() 
+   var firstName = document.getElementById('firstName').value
+   var middleName = document.getElementById('middletName').value
+   var lastName = document.getElementById('lastName').value
+   var state = document.getElementById('state').selectedOptions[0].value
+   var lga = document.getElementById('lga').selectedOptions[0].value
+   var date = document.getElementById('DOB').value
+   var POB  = document.getElementById('POB').value
+   var sex = document.getElementById('sex').selectedOptions[0].value
+   var religion  = document.getElementById('religion').selectedOptions[0].value
+   var sectionSlt = document.getElementById('sectionSlt').selectedOptions[0].value
+   
+   console.log(firstName)
+   console.log(middleName)
+   console.log(lastName)
+   console.log(state)
+   console.log(lga)
+   console.log(date)
+   console.log(POB)
+   console.log(sex)
+   console.log(religion)
+   console.log(sectionSlt)
+
+  if (firstName === ''|| middleName === ''|| lastName === ''|| state === '' || lga === ''|| date === ''|| POB === ''|| sex === ''|| religion === ''|| sectionSlt === '') {
+   alert('Please fill all inputs before submision')
+  }
+  else{
    window.print()
+  }
  }
 //  function lgaOptions() {
    
@@ -93,7 +129,7 @@ window.onclick = function(e) {
 function findSelected() {
    document.getElementById('lga').innerText= ''
    stateCity = document.getElementById('state').selectedOptions[0].value
-   LGA[stateCity].map((e)=>{
+   LGA[(stateCity-1)].map((e)=>{
       var option = document.createElement("option");
       option.value = e;
       option.innerText = e
