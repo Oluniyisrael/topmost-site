@@ -54,54 +54,58 @@
         <img src="../../images/something.png" alt="" id="logo">
         <h2 id="formH2">Topmost School form</h2>
       </div>
+      <p>Please fill the enrollment form</p>
       <div id="nameCont" class="formInputSects">
         <input type="text" id="firstName" placeholder="Firstname">
         <input type="text" id="middletName" placeholder="Middlename">
         <input type="text" id="lastName" placeholder="Lastname">
       </div>
       <!-- <input type="button" value="submit"> -->
-      <div id="state" class="formInputSects">
+      <div id="stateC" class="formInputSects">
         <p>State</p> 
-        <select name="state" id="state">
-          <option value="Abia">Abia</option>
-          <option value="Adamawa">Adamawa</option>
-          <option value="Akwa Ibom">Akwa Ibom</option>
-          <option value="Anambra">Anambra</option>
-          <option value="Bauchi">Bauchi</option>
-          <option value="Bayelsa">Bayelsa</option>
-          <option value="Benue">Benue</option>
-          <option value="Borno">Borno</option>
-            <option value="Cross River">Cross River</option>
-            <option value="Delta">Delta</option>
-            <option value="Ebonyi">Ebonyi</option>
-            <option value="Edo">Edo</option>
-            <option value="Ekiti">Ekiti</option>
-            <option value="Enugu">Enugu</option>
-            <option value="FCT">Federal Capital Territory</option>
-            <option value="Gombe">Gombe</option>
-            <option value="Imo">Imo</option>
-            <option value="Jigawa">Jigawa</option>
-            <option value="Kaduna">Kaduna</option>
-            <option value="Kano">Kano</option>
-            <option value="Katsina">Katsina</option>
-            <option value="Kebbi">Kebbi</option>
-            <option value="Kogi">Kogi</option>
-            <option value="Kwara">Kwara</option>
-            <option value="Lagos">Lagos</option>
-            <option value="Nasarawa">Nasarawa</option>
-            <option value="Niger">Niger</option>
-            <option value="Ogun">Ogun</option>
-            <option value="Ondo">Ondo</option>
-            <option value="Osun">Osun</option>
-            <option value="Oyo">Oyo</option>
-            <option value="Plateau">Plateau</option>
-            <option value="Rivers">Rivers</option>
-            <option value="Sokoto">Sokoto</option>
-            <option value="Taraba">Taraba</option>
-            <option value="Yobe">Yobe</option>
-            <option value="Zamfara">Zamfara</option>
+        <div id="schoolSectionContainerFF">
+        <select name="state" id="state" onchange="findSelected()">
+          <option value="1">Abia</option>
+          <option value="2">Adamawa</option>
+          <option value="3">Akwa Ibom</option>
+          <option value="4">Anambra</option>
+          <option value="5">Bauchi</option>
+          <option value="6">Bayelsa</option>
+          <option value="7">Benue</option>
+          <option value="8">Borno</option>
+            <option value="9">Cross River</option>
+            <option value="10">Delta</option>
+            <option value="11">Ebonyi</option>
+            <option value="12">Edo</option>
+            <option value="13">Ekiti</option>
+            <option value="14">Enugu</option>
+            <option value="15">Federal Capital Territory</option>
+            <option value="16">Gombe</option>
+            <option value="17">Imo</option>
+            <option value="18">Jigawa</option>
+            <option value="19">Kaduna</option>
+            <option value="20">Kano</option>
+            <option value="21">Katsina</option>
+            <option value="22">Kebbi</option>
+            <option value="23">Kogi</option>
+            <option value="24">Kwara</option>
+            <option value="25">Lagos</option>
+            <option value="26">Nasarawa</option>
+            <option value="27">Niger</option>
+            <option value="28">Ogun</option>
+            <option value="29">Ondo</option>
+            <option value="30">Osun</option>
+            <option value="31">Oyo</option>
+            <option value="32">Plateau</option>
+            <option value="33">Rivers</option>
+            <option value="34">Sokoto</option>
+            <option value="35">Taraba</option>
+            <option value="36">Yobe</option>
+            <option value="37">Zamfara</option>
         </select>
-        <div></div>
+        <select name="LGA" id="lga">
+        </select>
+      </div>
       </div>
       <div id="DOBcont" class="formInputSects">
         <p>Date of birth</p>
@@ -139,7 +143,7 @@
             </select>
       
               <span>
-                <select name="classSlt" id="classSlt" class="nurserySlt" title="for classes">
+                <select required name="classSlt" id="classSlt" class="nurserySlt" title="for classes">
                   <option value="Nursery 1" class="nursery">Nursery 1</option>
                   <option value="Nursery 2" class="nursery">Nursery 2</option>
                   <option value="Nursery 3" class="nursery">Nursery 3</option>
@@ -164,7 +168,7 @@
           </div>
         </div>
         <div id="btnCont">
-          <button id="submitBtn" type="button" onsubmit="(e)=>{e.preventDefault()}" onclick="printPage()">Accept and proceed to payment --></button>
+          <button id="submitBtn" type="button" onclick="printPage()">Accept and proceed to payment --></button>
         </div>
 
 
