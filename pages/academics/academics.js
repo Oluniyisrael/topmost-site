@@ -102,16 +102,16 @@ window.onclick = function(e) {
    var religion  = document.getElementById('religion').selectedOptions[0].value
    var sectionSlt = document.getElementById('sectionSlt').selectedOptions[0].value
    
-   console.log(firstName)
-   console.log(middleName)
-   console.log(lastName)
-   console.log(state)
-   console.log(lga)
-   console.log(date)
-   console.log(POB)
-   console.log(sex)
-   console.log(religion)
-   console.log(sectionSlt)
+   // console.log(firstName)
+   // console.log(middleName)
+   // console.log(lastName)
+   // console.log(state)
+   // console.log(lga)
+   // console.log(date)
+   // console.log(POB)
+   // console.log(sex)
+   // console.log(religion)
+   // console.log(sectionSlt)
 
   if (firstName === ''|| middleName === ''|| lastName === ''|| state === '' || lga === ''|| date === ''|| POB === ''|| sex === ''|| religion === ''|| sectionSlt === '') {
    alert('Please fill all inputs before submision')
