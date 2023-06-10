@@ -231,3 +231,166 @@ font-family: tahoma;
     0%{opacity: 0%;}
     100%{opacity: 100%;}
 }
+/* responsive desgin */
+@media screen and (max-width: 1000px){
+    .topnav {
+        height: 30px;
+        font-size: 15px;
+    }
+    .topnav button {
+        border: none;
+        font-size: 15px;
+        background-color: #8aa0b7;
+        height: 30px;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2 div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2 div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2Dis div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .acadInst {
+        width: 80%;
+        height: auto;
+        transition: 400ms;
+        padding: none;
+    }
+    .thePrincipal {
+        height: 100%;
+        padding: 40px 0;
+    }
+    .prinCont {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #footContact {
+    /* padding: 10px 15px; */
+    display: none;
+    }
+    #footContact h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .topnav div {
+        color: white;
+        font-size: 11px;
+    }
+    .topnav2 div {
+        width: 100%;
+    }
+    #topnav2imgc{
+        width: 90%;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 12px;
+    }
+    .topnav2 div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2 div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topnav2Dis div {
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 10px;
+    }
+    .topnav2Dis div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2Dis div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hBack {
+        align-items: center;
+        height: 100px;
+    }
+    
+    #hBack h2 {
+     margin-top: 0;
+    }
+    .contactUs {
+        height: 100%;
+    }
+    #cards {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 5em 0 5em 0;
+    }
+    .card {
+        width: 140px;
+        height: 150px;
+    }
+    .card img {
+        width: 75px;
+        height: 75px;
+        margin-top: -35px;
+    }
+    .card button {
+        margin: 2em 0;
+        width: 100px;
+        background-color: rgb(163, 165, 42);
+        outline: none;
+        border: 1px solid black;
+        padding: 1em;
+        cursor: pointer;
+        transition: 400ms;
+    }
+    }
