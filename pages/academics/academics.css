@@ -156,7 +156,7 @@ font-family: tahoma;
         align-self: end;
         width: 180px;
         display: flex;
-        height: 30px;
+        min-height: 50px;
         justify-content: center;
         
     }
@@ -365,6 +365,15 @@ font-family: tahoma;
 #footContact h1{
 
 }
+#buttCont {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+}
 #footContact ul li{
     /* display: inline-block; */
     list-style-type: none;
@@ -394,3 +403,156 @@ font-family: tahoma;
         display: none;
     }
     }
+    /* responsive desgin */
+@media screen and (max-width: 1000px){
+    .topnav {
+        height: 30px;
+        font-size: 15px;
+    }
+    .topnav button {
+        border: none;
+        font-size: 15px;
+        background-color: #8aa0b7;
+        height: 30px;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2 div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2 div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2Dis div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .acadInst {
+        width: 80%;
+        height: auto;
+        transition: 400ms;
+        padding: none;
+    }
+    .thePrincipal {
+        height: 100%;
+        padding: 40px 0;
+    }
+    .prinCont {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #academicsCont {
+        width: 100%;
+    }
+    .container {
+        height: 400px;
+    }
+    .text{
+        height: inherit;
+        text-align: justify;
+        font-size: 15px;
+
+    }
+    #footContact {
+    /* padding: 10px 15px; */
+    display: none;
+    }
+    #footContact h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .topnav div {
+        color: white;
+        font-size: 11px;
+    }
+    .topnav2 div {
+        width: 100%;
+    }
+    #topnav2imgc{
+        width: 90%;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 12px;
+    }
+    .topnav2 div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2 div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topnav2Dis div {
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 10px;
+    }
+    .topnav2Dis div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2Dis div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hBack {
+        align-items: center;
+        height: 100px;
+    }
+    
+    #hBack h2 {
+     margin-top: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 2em 20px;
+        height: 700px;
+    }
+}
