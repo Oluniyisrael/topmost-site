@@ -396,7 +396,7 @@ body{
         font-size: 20px;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .topnav div {
         color: white;
         font-size: 11px;
