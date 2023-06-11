@@ -184,11 +184,12 @@ font-family: tahoma;
     }
     /* ssl injection */
     #formH2 {
-        text-transform: uppercase;
-        color: #6a8e84;
-        font-family: monospace;
-        font-size: 50px;
-    }
+    text-transform: uppercase;
+    color: #6a8e84;
+    font-family: monospace;
+    font-size: 20px;
+}
+
     .applyModal{
         display:none;
         /* display: flex; */
@@ -552,5 +553,14 @@ font-family: tahoma;
         gap: 20px;
         padding: 2em 20px;
         height: 700px;
+    }
+    #nameCont {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    #schoolSectionContainerFF {
+        flex-direction: column;
     }
 }
