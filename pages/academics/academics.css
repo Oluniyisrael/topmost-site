@@ -474,6 +474,7 @@ font-family: tahoma;
     text-align: justify;
     font-size: 15px;
 }
+/* in case if it colides with text edit it here */
     #footContact {
     /* padding: 10px 15px; */
     display: none;
