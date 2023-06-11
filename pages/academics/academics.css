@@ -469,12 +469,11 @@ font-family: tahoma;
     .container {
         height: 400px;
     }
-    .text{
-        height: inherit;
-        text-align: justify;
-        font-size: 15px;
-
-    }
+    .text {
+    /* height: inherit; */
+    text-align: justify;
+    font-size: 15px;
+}
     #footContact {
     /* padding: 10px 15px; */
     display: none;
