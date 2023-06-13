@@ -393,10 +393,13 @@ font-family: tahoma;
      display:none
     }
     #modal{
-        display: flex;
+        display: block;
     }
     #applicationForm{
-        height: 90%;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        overflow-y: visible;
     }
     #btnCont{
         display: none;
