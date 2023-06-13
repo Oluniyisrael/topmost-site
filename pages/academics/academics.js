@@ -136,3 +136,265 @@ function findSelected() {
       document.getElementById('lga').appendChild(option)
   })
       }
+var string = `<body>
+<nav class="topnav"> 
+    <div>
+        <span> Location: Ijah Road, Sabon-Wuse, Tafa LGA, Niger State. &nbsp;</span>
+        <span> <a href="tel:+2348150753822">+2348150753822</a> &nbsp;</span>
+
+    </div>
+    <button> Vacancies</button>
+</nav>
+<nav class="topnav2" id="navbar">
+    <div>
+        <div>
+            <a href="../../index.html"><img src="../../images/Topmost logo.png" alt="..."></a>
+        </div>
+        <ul>
+            <li> <a href="../aboutUs/about.html">About us</a></li>
+            <li> <a href="#">Academics</a></li>
+            <li>Admission</li>
+            <li><a href="../../pages/contactus/contact.html">Contact us</a></li>
+            
+        </ul>
+    </div>
+</nav>
+<nav class="topnav2Dis" id="navbar2">
+  <div>
+      <div>
+        <a href="../../index.html"><img src="../../images/Topmost logo.png" alt="..."></a>
+      </div>
+      <ul>
+        <li> <a href="../pages/aboutUs/about.html">About us</a></li>
+        <li> <a href="#">Academics</a></li>
+        <li>Admission</li> 
+        <li><a href="../../pages/contactus/contact.html">Contact us</a></li>
+          
+      </ul>
+  </div>
+</nav>
+<div id="hBack">
+  <h2> Academics</h2>
+</div>
+<!-- Form -->
+<section class="printedForm">
+<div id="Heading" class="formInputSects">
+  <img src="../../images/something.png" alt="" id="logo">
+  <h2 id="formH2">Topmost School form</h2>
+  <br>
+  <div> Letter of Admission</div>
+</div>
+</section>
+<section class="applyModal" id="modal">
+<form id="applicationForm">
+  <div id="Heading" class="formInputSects">
+    <img src="../../images/something.png" alt="" id="logo">
+    <h2 id="formH2">Topmost School form</h2>
+  </div>
+  <p>Please fill the enrollment form</p>
+  <div id="nameCont" class="formInputSects">
+    <input type="text" id="firstName" placeholder="Firstname">
+    <input type="text" id="middletName" placeholder="Middlename">
+    <input type="text" id="lastName" placeholder="Lastname">
+  </div>
+  <!-- <input type="button" value="submit"> -->
+  <div id="stateC" class="formInputSects">
+    <div id="schoolSectionContainerFF">
+      <div>
+        <p>State</p> 
+        <select name="state" id="state" onchange="findSelected()">
+          <option disabled selected>Select state</option>
+          <option value="1">Abia</option>
+          <option value="2">Adamawa</option>
+          <option value="3">Akwa Ibom</option>
+          <option value="4">Anambra</option>
+          <option value="5">Bauchi</option>
+          <option value="6">Bayelsa</option>
+          <option value="7">Benue</option>
+          <option value="8">Borno</option>
+            <option value="9">Cross River</option>
+            <option value="10">Delta</option>
+            <option value="11">Ebonyi</option>
+            <option value="12">Edo</option>
+            <option value="13">Ekiti</option>
+            <option value="14">Enugu</option>
+            <option value="15">Federal Capital Territory</option>
+            <option value="16">Gombe</option>
+            <option value="17">Imo</option>
+            <option value="18">Jigawa</option>
+            <option value="19">Kaduna</option>
+            <option value="20">Kano</option>
+            <option value="21">Katsina</option>
+            <option value="22">Kebbi</option>
+            <option value="23">Kogi</option>
+            <option value="24">Kwara</option>
+            <option value="25">Lagos</option>
+            <option value="26">Nasarawa</option>
+            <option value="27">Niger</option>
+            <option value="28">Ogun</option>
+            <option value="29">Ondo</option>
+            <option value="30">Osun</option>
+            <option value="31">Oyo</option>
+            <option value="32">Plateau</option>
+            <option value="33">Rivers</option>
+            <option value="34">Sokoto</option>
+            <option value="35">Taraba</option>
+            <option value="36">Yobe</option>
+            <option value="37">Zamfara</option>
+        </select>
+      </div>
+      <div>
+        <p>LGA</p>
+        <select name="LGA" id="lga">
+        </select>
+      </div>
+  </div>
+  </div>
+  <div id="DOBcont" class="formInputSects">
+    <p>Date of birth</p>
+    <input type="date" name="DOB" id="DOB" >
+  </div>
+  <div id="POBc" class="formInputSects">
+    <p>Place of birth</p>
+    <input type="text" name="" id="POB">
+  </div>
+  <div id="sexc" class="formInputSects">
+    <p>Sex</p> 
+    <select name="sex" id="sex">
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3" title="we dont do that here" disabled>Transgender</option>
+    </select>
+  </div>
+  <div id="religionc" class="formInputSects">
+    <p>Religion</p>
+    <select name="religion" id="religion">
+      <option value="1">Christian</option>
+      <option value="2">Muslim</option>
+      <option value="3" title="we dont do that here" disabled>Pagan</option>
+    </select>
+  </div>
+    <div id=" schoolSectionContainer" class="formInputSects">
+      <p>Select class</p>
+      <div id="schoolSectionContainerFF">
+
+        <select name="sectionSlt" id="sectionSlt" title="for type of classes" onchange="changeSection()" >
+          <option value="1">Nursery</option>
+          <option value="2">Primary</option>
+          <option value="3">Secondary</option>
+          <option value="4" disabled >Bording</option>
+        </select>
+  
+          <span>
+            <select required name="classSlt" id="classSlt" class="nurserySlt" title="for classes">
+              <option value="Nursery 1" class="nursery">Nursery 1</option>
+              <option value="Nursery 2" class="nursery">Nursery 2</option>
+              <option value="Nursery 3" class="nursery">Nursery 3</option>
+            </select>
+            <select name="classSlt" id="classSlt" class="primarySlt" title="for classes">
+              <option value=" Primary 1" class="primary">Primary 1</option>
+              <option value="Primary 2" class="primary">Primary 2</option>
+              <option value="Primary 3" class="primary">Primary 3</option>
+              <option value="Primary 4" class="primary">Primary 4</option>
+              <option value="Primary 5" class="primary">Primary 5</option>
+              <option value="Primary 6" class="primary">Primary 6</option>
+            </select>
+            <select name="classSlt" id="classSlt" class="secondarySlt" title="for classes">
+              <option value="JS 1" class="secondary">Junior secondary 1</option>
+              <option value="JS 2" class="secondary">Junior secondary 2</option>
+              <option value="JS 3" class="secondary">Junior secondary 3</option>
+              <option value="JS 4" class="secondary">Senior secondary 1</option>
+              <option value="JS 5" class="secondary">Senior secondary 2</option>
+              <option value="JS 6" class="secondary">Senior secondary 3</option>        
+            </select>
+          </span>
+      </div>
+    </div>
+    <div id="btnCont">
+      <button id="submitBtn" type="button" onclick="printPage()">Accept and proceed to payment --></button>
+    </div>
+
+
+</form>
+</section>
+<!-- Form -->
+<section id="academics" >
+  <div id="academicsCont">
+    <h2>Nursery</h2>
+    <div id="nursery" class="container">
+      <img src="../../images/Nursery class.jpg" alt="">
+      <div class="text">
+        However, nursery education from TOPMOST INTERCONTINETIAL ACADEMIC allows children the opportunity to apply what they have learned at home in an applied setting, mixing with other individuals outside of their homes. At an early age, the brain develops much faster, this is as a result of the neuron.
+        A lot of parents in Nigeria are not aware of the benefits of nursery education to their children. Some do not even see the need for enrolling their children in topmost Intercontinetial, as they do not consider this level of learning to be important. This shouldn’t be, because nursery education is vital to the growth and development of your child.
+        Do your child will to regester for our nursery school section and click the button done below.
+        <div id="buttCont">
+          <div id="imgConta">
+            <img src="../../images/hand.png" alt="" srcset="" id="buttonHand">
+          </div>
+          <button class="apply">Apply Now!!!</button>
+          
+        </div>
+      </div>
+    </div>
+    <h2>Primary</h2>
+    <div id="primary" class="container">
+      <img src="../../images/primary.jpg" alt="">
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores, fugiat et natus voluptas eum fuga, aliquid hic consequuntur ab quam odio! Ullam similique vel maxime praesentium hic nihil, reprehenderit impedit recusandae molestias, veniam ratione atque eaque optio maiores magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sint. Voluptatem consectetur incidunt quam voluptate, assumenda, at culpa ad commodi ab odio tempora dignissimos repudiandae excepturi quaerat vero minus impedit recusandae sed eveniet adipisci labore dolorem. Voluptatum perferendis voluptates vero.
+        <div id="buttCont">
+          <div id="imgConta">
+            <img src="../../images/hand.png" alt="" srcset="" id="buttonHand">
+          </div>
+          <button class="apply">Apply Now!!!</button>
+        </div>
+      </div>
+    </div>
+    <h2>Secondary</h2>
+    <div id="secondary" class="container">
+      <img src="../../images/secondary.jpg" alt="">
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores, fugiat et natus voluptas eum fuga, aliquid hic consequuntur ab quam odio! Ullam similique vel maxime praesentium hic nihil, reprehenderit impedit recusandae molestias, veniam ratione atque eaque optio maiores magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sint. Voluptatem consectetur incidunt quam voluptate, assumenda, at culpa ad commodi ab odio tempora dignissimos repudiandae excepturi quaerat vero minus impedit recusandae sed eveniet adipisci labore dolorem. Voluptatum perferendis voluptates vero.
+        <div id="buttCont">
+          <div id="imgConta">
+            <img src="../../images/hand.png" alt="" srcset="" id="buttonHand">
+          </div>
+          <button class="apply">Apply Now!!!</button>
+        </div>
+      </div>
+    </div>
+    <h2>Boarding</h2>
+    <div id="secondary" class="container">
+      <img src="../../images/secondary.jpg" alt="" title="{input boarding picture}">
+      <div class="text">
+        TOPMOST INTERCONTINETIAL ACADEMIC provide the conditions for boarders to develop their intellectual talents through well-structured and well-observed prep conditions, with support from Tutors and Houseparents, and in addition to provide an atmosphere conducive to carrying out academic work.
+        TOPMOST INTERCONTINETIAL ACADEMIC provide a happy, safe secure environment for our boarders to live in and thrive. Ensure a fun and open environment that promotes friendships that will last a lifetime. To treat and be treated by other boys and staff with respect and dignity. To promote and practice the schools 3 R's through the boarding experienc
+        <div id="buttCont">
+          <div id="imgConta">
+            <img src="../../images/hand.png" alt="" srcset="" id="buttonHand">
+          </div>
+          <button class="apply">Apply Now!!!</button>
+        </div>
+      </div>
+    </div>
+</section>
+<footer class="footer">
+    <div id="footContact">
+      <h1>Contact us</h1>
+      <ul>
+        <li>
+          tel:<a href="tel:+2348150753822">+2348150753822</a> &nbsp;
+        </li>
+        <li>
+          address: Location: Ijah Road, Sabon-Wuse, Tafa LGA, Niger State.
+        </li>
+        <li>
+          email: <a href="mailto:">somethingsomething@gmail.com</a> &nbsp;
+        </li>
+      </ul>
+
+    </div>
+    <div class="footnote">Copyright © 2023 <span><a href="https://izzyself.netlify.app/">Israelade</a></span>  - Topmost Intercontinetial Academy. All Rights Reserved</div>
+</footer>
+<script src="../../index/index.js"></script>
+<script src="./academics.js"></script>
+</body>`

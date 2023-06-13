@@ -379,6 +379,13 @@ font-family: tahoma;
     font-size: 15px;
     font-family: tahoma;
 }
+.printedForm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 @keyframes fadeIn {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
