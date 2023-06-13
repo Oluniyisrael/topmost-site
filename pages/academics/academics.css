@@ -386,6 +386,7 @@ font-family: tahoma;
     right: 0;
     bottom: 0;
 }
+
 @keyframes fadeIn {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
@@ -411,6 +412,22 @@ font-family: tahoma;
     #btnCont{
         display: none;
     }
+    #applicationForm select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        }
+        #nameCont{
+            gap: 0;
+        }
+        #applicationForm select {
+            border: none;
+            outline: none;
+        }
+         #applicationForm input[type=text] {
+            border: none;
+            outline: none;
+        }
     }
     /* responsive desgin */
 @media screen and (max-width: 1000px){
