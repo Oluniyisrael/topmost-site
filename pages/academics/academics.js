@@ -118,6 +118,7 @@ window.onclick = function(e) {
   }
   else{
    window.print()
+   document.location = 'https://paystack.com/pay/e697ys1sf2'
   }
  }
 //  function lgaOptions() {
