@@ -84,7 +84,6 @@ var LGA = [
    Yobe=["Bade","Bursari","Damaturu","Fika","Fune","Geidam","Gujba","Gulani","Jakusko","Karasuwa","Machina","Nangere","Nguru","Potiskum","Tarmuwa","Yunusari","Yusufari"],
    Zamfara=["Anka","Bakura","Birnin Magaji Kiyaw","Bukkuyum","Bungudu","Gummi","Gusau","Kaura Namoda","Maradun","Maru","Shinkafi","Talata Mafara","Chafe","Zurmi"]
 ]
-
 window.onclick = function(e) {
    if (e.target == modal) {
      modal.style.display = "none";
@@ -117,8 +116,8 @@ window.onclick = function(e) {
    alert('Please fill all inputs before submision')
   }
   else{
-   window.print()
-   document.location = 'https://paystack.com/pay/e697ys1sf2'
+   printAndPay()
+  //  document.location = 'https://paystack.com/pay/e697ys1sf2'
   }
  }
 //  function lgaOptions() {
@@ -399,3 +398,31 @@ var string = `<body>
 <script src="../../index/index.js"></script>
 <script src="./academics.js"></script>
 </body>`
+// for page direction
+function printAndPay() {
+  window.print()
+  var option = document.getElementById('sectionSlt').selectedOptions[0].value
+  var sectionslt = document.getElementsByClassName('classSlt')[(option - 1)].selectedOptions[0].value
+  var jsOrSs = sectionslt.substring(0,sectionslt.length - 2);
+
+  if (option === '1') {
+       document.location = 'https://paystack.com/pay/e697ys1sf2'
+
+  }
+  else if(option === '2'){
+    document.location = 'https://paystack.com/pay/9iwwpv8mac'
+  }
+  else if(option === '3' && jsOrSs === 'JS')
+  {
+    document.location = 'https://paystack.com/pay/9iwwpv8mac'
+
+  }
+  else{
+    document.location = 'https://paystack.com/pay/9iwwpv8mac'
+  }
+  
+  //  test.substring(0, test.length - 1);
+  //  document.location = 'https://paystack.com/pay/e697ys1sf2'
+
+  
+}
