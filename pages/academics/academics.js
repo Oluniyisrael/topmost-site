@@ -18,7 +18,7 @@ var religion  = document.getElementById('religion').value
 var sectionSlt = document.getElementById('sectionSlt').value
 
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 3; i++) {
    apply[i].addEventListener('click',()=>{
       modal.style.display = 'flex'
    })  
@@ -422,7 +422,11 @@ function printAndPay() {
   }
   
   //  test.substring(0, test.length - 1);
-  //  document.location = 'https://paystack.com/pay/e697ys1sf2'
-
+  //  document.location = 'https://paystack.com/pay/e697ys1sf2
   
 }
+// new bug: fake lga and class optiosn when returened to the page
+// at lease code is working
+//Implementations to be done, On clicking a section the academics place the option for the section of school gets picked automatically
+//Bad form print out
+// 

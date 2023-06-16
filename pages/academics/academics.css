@@ -345,6 +345,10 @@ font-family: tahoma;
         cursor: pointer;
     
 }
+#nodrop:hover{
+    cursor: no-drop;
+    background-color: #944f4593;
+}
 /* end work*/
 .footer{
     width: 100%;
