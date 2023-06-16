@@ -414,11 +414,11 @@ function printAndPay() {
   }
   else if(option === '3' && jsOrSs === 'JS')
   {
-    document.location = 'https://paystack.com/pay/9iwwpv8mac'
+    document.location = 'https://paystack.com/pay/isuo14zx2p'
 
   }
   else{
-    document.location = 'https://paystack.com/pay/9iwwpv8mac'
+    document.location = 'https://paystack.com/pay/in3b1djcn-'
   }
   
   //  test.substring(0, test.length - 1);
