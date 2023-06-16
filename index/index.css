@@ -309,6 +309,7 @@ body{
 .footnote{
     text-align: center;
     font-family: tahoma;
+    border-top: 1px solid;
 }
 #footContact{
     padding: 20px 30px;
