@@ -230,6 +230,8 @@ font-family: tahoma;
         height: 50px;
         cursor: pointer;
         transition: 400ms;
+        background: #43a360;
+
         }
     #submitBtn:hover{
         background-color: #945045;
@@ -240,12 +242,12 @@ font-family: tahoma;
 #applicationForm::-webkit-scrollbar {
     width: 20px;
     height: 10px;
-    background: #945045;
+    background: #e0d9bc;
     border-radius: 10px;
 }
 #applicationForm::-webkit-scrollbar-thumb {
+    background: #43a360;
     border-radius: 10px;
-    background: #e0d9bc;
     /* background: linear-gradient(left, #4A4A4A, #404040); */
     box-shadow: inset 0 0 1px 1px #191919;
 }
@@ -254,9 +256,8 @@ font-family: tahoma;
     /* background: linear-gradient(left, #212121, #323232); */
     box-shadow: 0 0 1px 1px #111;
 }
-    #applicationForm{
-        background: linear-gradient(180deg,#8e8787,#754400d6,#754400ba);
-        border-radius: 40px;
+    #applicationForm{  
+        background: linear-gradient(180deg,#e0d9bc,#9b7f58d6,#754400ba);        border-radius: 40px;
         box-shadow: 0 0 17px 2px #1d032ab8;
         flex-wrap: wrap;
         height: 15em;
@@ -500,7 +501,7 @@ font-family: tahoma;
     .text {
     /* height: inherit; */
     text-align: justify;
-    font-size: 15px;
+    font-size: 13px;
 }
 /* in case if it colides with text edit it here */
     #footContact {
@@ -509,6 +510,15 @@ font-family: tahoma;
     }
     #footContact h1 {
         font-size: 20px;
+    }
+    #buttCont {
+        height: 210px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 200px;
     }
 }
 @media screen and (max-width:800px) {
@@ -590,4 +600,10 @@ font-family: tahoma;
     #schoolSectionContainerFF {
         flex-direction: column;
     }
+    
+}
+@media screen and (max-width: 400px){
+.topnav2 div ul li {
+    font-size: 9px;
+}
 }
