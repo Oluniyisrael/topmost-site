@@ -402,6 +402,23 @@ font-family: tahoma;
     100%{margin-top: -20px;}
 }
 @media print {
+    /* new */
+    body * {
+        visibility: hidden;
+      }
+  
+      #applicationOutput,
+      #applicationOutput * {
+        visibility: visible;
+      }
+  
+      #applicationOutput {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+    /* new */
     #academics{
      display:none
     }

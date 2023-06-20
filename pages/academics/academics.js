@@ -400,7 +400,20 @@ var string = `<body>
 </body>`
 // for page direction
 function printAndPay() {
-  window.print()
+  var firstName = document.getElementById('firstName').value;
+    var middleName = document.getElementById('middletName').value;
+    var lastName = document.getElementById('lastName').value;
+    var selectedClass = document.getElementById('classSlt').selectedOptions[0].value;
+
+    var writeUp = "I, " + firstName + " " + middleName + " " + lastName + ", am seeking to be a student into your school. I wish to be in class " + selectedClass + ".";
+
+    document.getElementById('applicationText').innerText = writeUp;
+    document.getElementById('applicationOutput').style.display = 'block';
+
+    window.print();
+    document.getElementById('applicationForm').reset();
+    document.getElementById('applicationOutput').style.display = 'none';
+
   var option = document.getElementById('sectionSlt').selectedOptions[0].value
   var sectionslt = document.getElementsByClassName('classSlt')[(option - 1)].selectedOptions[0].value
   var jsOrSs = sectionslt.substring(0,sectionslt.length - 2);
