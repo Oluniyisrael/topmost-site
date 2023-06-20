@@ -391,7 +391,18 @@ font-family: tahoma;
     right: 0;
     bottom: 0;
 }
-
+#passportC{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 200px;
+    margin: 0 0 20px 0;
+}
+#passport{
+    height: inherit;
+    width: 150px;
+    border: 1px solid black;
+}
 @keyframes fadeIn {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
@@ -410,6 +421,8 @@ font-family: tahoma;
       #applicationOutput,
       #applicationOutput * {
         visibility: visible;
+        color: black;
+        font-family: tahoma;
       }
   
       #applicationOutput {
@@ -417,6 +430,10 @@ font-family: tahoma;
         width: 100%;
         left: 0;
         top: 0;
+      }
+      #applicationOutput h2{
+        text-align: center;
+        font-size: 25px;
       }
     /* new */
     #academics{
