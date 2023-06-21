@@ -403,16 +403,16 @@ function printAndPay() {
   var firstName = document.getElementById('firstName').value;
     var middleName = document.getElementById('middletName').value;
     var lastName = document.getElementById('lastName').value;
-    var selectedClass = document.getElementById('classSlt').selectedOptions[0].value;
+    var selectedClassType = document.getElementById('sectionSlt').selectedOptions[0].value;
+    var selectedClass = document.getElementsByClassName('classSlt')[(selectedClassType - 1)].selectedOptions[0].value;
 
-    var writeUp = "I, " + firstName + " " + middleName + " " + lastName + ", am seeking to be a student into your school. I wish to be in class " + selectedClass + ".";
+    var writeUp = "I, " + firstName + " " + middleName + " " + lastName + ", am seeking to be a student into your school. I wish to be in " + selectedClass + " class.";
 
     document.getElementById('applicationText').innerText = writeUp;
     document.getElementById('applicationOutput').style.display = 'block';
 
     window.print();
-    document.getElementById('applicationForm').reset();
-    document.getElementById('applicationOutput').style.display = 'none';
+
 
   var option = document.getElementById('sectionSlt').selectedOptions[0].value
   var sectionslt = document.getElementsByClassName('classSlt')[(option - 1)].selectedOptions[0].value
@@ -434,6 +434,8 @@ function printAndPay() {
     document.location = 'https://paystack.com/pay/in3b1djcn-'
   }
   
+  document.getElementById('applicationForm').reset();
+  document.getElementById('applicationOutput').style.display = 'none';
   //  test.substring(0, test.length - 1);
   //  document.location = 'https://paystack.com/pay/e697ys1sf2
   
