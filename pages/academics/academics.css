@@ -238,10 +238,9 @@ font-family: tahoma;
         color: white;
     }
     #submitBtn.disabled {
-        cursor: no-drop;
-      }
-      
-      #submitBtn.disabled:hover {
+    }
+    
+    #submitBtn.disabled:hover {
         opacity: 0.5; /* Faint hover color */
       }
 

@@ -442,11 +442,15 @@ function printAndPay() {
 }
 
   document.getElementById('submitBtn').disabled=true
+  document.getElementById('submitBtn').style.cursor='no-drop'
   function enableButton(){
     if (document.getElementById('readInstrc').checked){
       document.getElementById('submitBtn').disabled=false
+      document.getElementById('submitBtn').style.cursor='pointer'
     }else{
       document.getElementById('submitBtn').disabled=true
+      document.getElementById('submitBtn').style.cursor='no-drop'
+
     }
   }
   
