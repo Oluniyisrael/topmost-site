@@ -237,6 +237,13 @@ font-family: tahoma;
         background-color: #945045;
         color: white;
     }
+    #submitBtn.disabled {
+        cursor: no-drop;
+      }
+      
+      #submitBtn.disabled:hover {
+        opacity: 0.5; /* Faint hover color */
+      }
 
 
 #applicationForm::-webkit-scrollbar {

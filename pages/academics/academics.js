@@ -449,6 +449,7 @@ function printAndPay() {
       document.getElementById('submitBtn').disabled=true
     }
   }
+  
 // new bug: fake lga and class optiosn when returened to the page
 // at lease code is working
 //Implementations to be done, On clicking a section the academics place the option for the section of school gets picked automatically
