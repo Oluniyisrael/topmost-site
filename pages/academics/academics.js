@@ -440,6 +440,15 @@ function printAndPay() {
   //  document.location = 'https://paystack.com/pay/e697ys1sf2
   
 }
+
+  document.getElementById('submitBtn').disabled=true
+  function enableButton(){
+    if (document.getElementById('readInstrc').checked){
+      document.getElementById('submitBtn').disabled=false
+    }else{
+      document.getElementById('submitBtn').disabled=true
+    }
+  }
 // new bug: fake lga and class optiosn when returened to the page
 // at lease code is working
 //Implementations to be done, On clicking a section the academics place the option for the section of school gets picked automatically

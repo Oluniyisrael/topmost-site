@@ -403,6 +403,14 @@ font-family: tahoma;
     width: 150px;
     border: 1px solid black;
 }
+#readInstrc{
+    display: inline;
+    width: 20px !important;
+}
+#checkboxCont{
+    display: flex;
+}
+
 @keyframes fadeIn {
     0%{opacity: 0%;}
     100%{opacity: 100%;}
