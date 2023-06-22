@@ -189,18 +189,34 @@
         <div id="btnCont">
           <button id="submitBtn" type="button" onclick="printPage()">Accept and proceed to payment --></button>
         </div>
-        <div id="applicationOutput" class="formInputSects" style="display: none;">
-          <div id="Heading" class="formInputSects">
-            <img src="../../images/something.png" alt="" id="logo">
-            <h2 id="formH2">Topmost School form</h2>
+        <div id="applicationOutput" class="formInputSects" style="display: none; flex-direction: column; height: 80vh; justify-content: space-between; ">
+          <div>
+            <div id="Heading" class="formInputSects">
+              <img src="../../images/something.png" alt="" id="logo">
+              <h2 id="formH2">Topmost School form</h2>
+            </div>
+            <div id="passportC">
+              <div id="passport">
+                Input Passport
+              </div>
+            </div>
+            <h2>Application Form</h2>
+            <p id="applicationText" style="font-size: 20px;"></p>
           </div>
-          <div id="passportC">
-            <div id="passport">
-              Input Passport
+          <div class="signature" style="justify-self: flex-end;">
+            <div class="signatureDet">
+              <p>Student signature</p>
+              <div class="underline"></div>
+            </div>
+            <div class="signatureDet">
+              <p>Parent signature</p>
+              <div class="underline"></div>
+            </div>
+            <div class="signatureDet">
+              <p>Principla's signature</p>
+              <div class="underline"></div>
             </div>
           </div>
-          <h2>Application Form</h2>
-          <p id="applicationText"></p>
         </div>
 
 

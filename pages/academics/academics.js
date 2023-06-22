@@ -405,11 +405,16 @@ function printAndPay() {
     var lastName = document.getElementById('lastName').value;
     var selectedClassType = document.getElementById('sectionSlt').selectedOptions[0].value;
     var selectedClass = document.getElementsByClassName('classSlt')[(selectedClassType - 1)].selectedOptions[0].value;
+    var age = (2023 - (parseInt(document.getElementById('DOB').value.substring(0,document.getElementById('DOB').value.length - 6))))
+    var state = document.getElementById('state').selectedOptions[0].innerText
+    var lga = document.getElementById('lga').selectedOptions[0].value
+    var religion  = document.getElementById('religion').selectedOptions[0].innerText
+    var POB  = document.getElementById('POB').value
 
-    var writeUp = "I, " + firstName + " " + middleName + " " + lastName + ", am seeking to be a student into your school. I wish to be in " + selectedClass + " class.";
+    var writeUp = "I, " + firstName + " " + middleName + " " + lastName + ", am seeking to be a student into your school. I wish to be in " + selectedClass + " class. I am curently " + age + " years old and I come from " + state + " state, in " + lga + " local government area. I am a " + religion + ". I was born in " + POB + ". I have carefully reviewed the instructions and requirements for admission to Topmost Intercontinetial Acedemy, and I promise to abide by the laws, rules and regulations that align with the values and standards of your institution.";
 
     document.getElementById('applicationText').innerText = writeUp;
-    document.getElementById('applicationOutput').style.display = 'block';
+    document.getElementById('applicationOutput').style.display = 'flex';
 
     window.print();
 
