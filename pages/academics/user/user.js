@@ -10,24 +10,7 @@ fetch(database)
             
             var welcome = 'Welcome ' + data[userIdNumber].username
             //result
-            var resultSections = Object.keys(data[userIdNumber].result);
-
-            if (resultSections[0] === undefined ) {
-                console.log('no result')
-            }
-            else{
-                for (var i = 0; i < resultSections.length; i++) {
-                var container = document.getElementById("results"); 
-                container.innerHTML = '';
-                var section = resultSections[i];
-                var div = document.createElement('div');
-                div.style.cursor = "pointer";
-                div.className = 'resultLine';
-                div.innerText = section;
-            }
-            container.appendChild(div);
-            }
-
+            // console.log(data[userIdNumber].result[0].name)
             // result
             //bio
             document.getElementById('welcome').innerText = welcome
