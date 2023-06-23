@@ -20,7 +20,7 @@
         <nav class="topnav2" id="navbar">
             <div>
                 <div id="topnav2imgc">
-                    <img src="../../images/Topmost logo.png" alt="...">
+                    <a href="../../index.html"><img src="../../images/Topmost logo.png" alt="..."></a>
                 </div>
                 <ul>
                     <li> <a href="../../pages/aboutUs/about.html">About us</a></li>
@@ -34,7 +34,7 @@
         <nav class="topnav2Dis" id="navbar2">
         <div>
             <div id="topnav2Disimgc">
-                <img src="../../images/Topmost logo.png" alt="...">
+                <a href="../../index.html"><img src="../../images/Topmost logo.png" alt="..."></a>
             </div>
             <ul>
                 <li> <a href="../../pages/aboutUs/about.html">About us</a></li>
@@ -51,10 +51,11 @@
         <section id="loginFormCont">
         <form id="loginForm">
             <p>Student's Login</p>
-            <input type='text' id='username' placeholder = 'Username' name= 'username' />
+            <input type='text' id='username' placeholder = 'Username' name= 'username' required/>
     
-            <input type='password' id='password' placeholder = 'Password' name= 'password' />
-            
+            <input type='password' id='password' placeholder = 'Password' name= 'password'  required/>
+
+            <p id="Incorrect" style="display: none; font-weight: 100;font-size: 10px; text-align: left; text-transform: none;">Username or password is incorrect</p>
             <input type="button" value='Submit' id="submitButton" onclick=""/>
         </form>
         </form>

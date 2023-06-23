@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "name":"Israel Oluniyi",
+        "username":"Israel Oluniyi",
         "password":"1234567890",
         "class": "SS2",
         "class Number":"24",
@@ -29,7 +29,7 @@
     },
     {
         "id":2,
-        "name":"Eric Emmanuel",
+        "username":"Eric Emmanuel",
         "password":"1234567890",
         "class": "SS2",
         "class Number":"25",
