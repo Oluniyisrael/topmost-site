@@ -41,15 +41,20 @@ fetch(database)
             console.log('Error:', error);
         });
         //hellfire adverted
-        for (let i = 0; i <document.getElementsByClassName('mainContianer').length; i++) {
-            document.getElementsByClassName('mainContianer')[i].style.display = 'none';
-            
+        function closeUnsuedDivs(){
+            for (let i = 0; i < document.getElementsByClassName('mainContainer').length; i++) {
+                document.getElementsByClassName('mainContainer')[i].style.display = 'none';
+                
+            }
         }
+        
         for (let i = 0; i < document.getElementsByClassName('li').length; i++) {
             document.getElementsByClassName('li')[i].addEventListener('click',()=>{
-
-                document.getElementsByClassName('mainContainer')[i].style.display = 'none'
+               
+                closeUnsuedDivs()
+                document.getElementsByClassName('mainContainer')[i].style.display = 'block'
                 console.log(i)
+
             })
             
         }
