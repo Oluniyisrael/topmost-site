@@ -5,6 +5,8 @@
         "password":"1234567890",
         "class": "SS2",
         "class Number":"24",
+        "imagesrc":"../../../images/studentImage/Israel Oluniyi.jpg",
+        "age": 17,
         "section":"Science",
         "result":{
             

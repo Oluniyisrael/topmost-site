@@ -82,6 +82,19 @@
         margin-left: 200px;
          width: auto;
     }
+    #imageContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #userphoto{
+        height: 255px;
+        width: 255px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #1E2F23;
+    }
     /* end work*/
     .footer{
         z-index: 9999;

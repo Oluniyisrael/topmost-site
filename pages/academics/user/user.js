@@ -11,8 +11,8 @@ fetch(database)
             var welcome = 'Welcome ' + data[userIdNumber].username
             document.getElementById('welcome').innerText = welcome
             document.getElementsByTagName('title')[0].innerHTML +=data[userIdNumber].username
+            document.getElementById('userphoto').src = data[userIdNumber].imagesrc
             })
             .catch(error => {
             console.log('Error:', error);
         });
-        
