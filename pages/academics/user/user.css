@@ -42,14 +42,19 @@
         cursor: pointer;
         }
     .userSideBar{
-        display: none;
-        width: 300px;
+        /* display: none; */
+        position: static;
+        width: 200px;
         background-color: #1E2F23;
         height: 100%;
         position: absolute;
         left: 0;
         bottom: 0;
         top: 0;
+    }
+    #sideBarimgc img{
+        margin-top: 60px;
+        width: 200px;
     }
     #hBack{
         display: flex;
@@ -70,8 +75,17 @@
     #user{
         height: 40em;
     }
+    #welcome{
+        text-align: center;
+    }
+    #mainContainer{
+        margin-left: 200px;
+         width: auto;
+    }
     /* end work*/
     .footer{
+        z-index: 9999;
+        position: relative;
         width: 100%;
         background: #1E2F23;
         color: white;

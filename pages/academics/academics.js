@@ -21,6 +21,7 @@ function isCorrect() {
                     if (data[i].username === username && data[i].password === password) {
                         found = true; 
                         localStorage.setItem('LoggedinUser',i)
+                        window.location.href = './user/user.html'
                         break; 
                     }
                 }
