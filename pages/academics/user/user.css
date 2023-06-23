@@ -51,10 +51,32 @@
         left: 0;
         bottom: 0;
         top: 0;
+        overflow: hidden;
     }
     #sideBarimgc img{
         margin-top: 60px;
         width: 200px;
+    }
+    .li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        margin: 5px 0;
+    }
+    .li input[type=button]{
+        background-color: #945045;
+        width: 90%;
+        transition: 400ms;
+        font-size: 17px;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .li input[type=button]:hover{
+        background-color: #1E2F23;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transform: scale(1.02);
     }
     #hBack{
         display: flex;
@@ -94,6 +116,7 @@
         margin: 10px;
         color: #e0d9bc;
     }
+
     #imageContainer{
         width: 100%;
         display: flex;

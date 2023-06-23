@@ -1,6 +1,6 @@
 var database = '../../markDown/database.json';
-
 localStorage.removeItem('LoggedinUser')
+
 function incorrect(){
     document.getElementById('Incorrect').style.display ='block'
 }

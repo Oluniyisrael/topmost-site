@@ -1,20 +1,28 @@
 var userIdNumber = localStorage.getItem('LoggedinUser');
 var database = '../../../markDown/database.json';
 
-// if (userIdNumber === null) {
-//     window.location.href = '../academics.html'
-// }
+if (userIdNumber === null) {
+    window.location.href = '../academics.html'
+}
 fetch(database)
         .then(response => response.json())
         .then(data => {
-            
-            var welcome = 'Welcome ' + data[userIdNumber].username
-            //result
-            // console.log(data[userIdNumber].result[0].name)
-            for (let i = 0; i < data[userIdNumber].result.length; i++) {
-                console.log( data[userIdNumber].result[i])
-                
+            if (data[userIdNumber].result.length !== 0 ) {
+                document.getElementsByClassName('mainContainer')[1].innerHTML = ''
+                var welcome = 'Welcome ' + data[userIdNumber].username
+                //result
+                console.log(data[userIdNumber].result.length)
+                for (let i = 0; i < data[userIdNumber].result.length; i++) {
+                    console.log( data[userIdNumber].result[i])
+                    var div = document.createElement('div')
+                    div.className = 'resultLine'
+                    div.style.cursor = 'pointer'
+                    div.innerHTML = data[userIdNumber].result[i].name
+                    document.getElementsByClassName('mainContainer')[1].appendChild(div)
+                    
+                }
             }
+            
             // result
             //bio
             document.getElementById('welcome').innerText = welcome
