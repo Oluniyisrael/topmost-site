@@ -1,0 +1,676 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+position: relative;
+background: #e0d9bc;
+height: 100%;
+width: 100%;
+}
+.topnav{
+height: 50px;
+width: 100%;
+background-color:#6a8e84;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 0;
+}
+
+.topnav a:link{
+color: #e0d9bc;
+}
+.topnav a:visited{
+color: #e0d9bc;
+}
+.topnav div{
+color: white;
+width: 80%;
+/* height: 50px; */
+}
+.topnav div span{
+border-right:2px solid #945045;
+}
+.topnav button{
+border: none;
+font-size: 20px;
+background-color: #8aa0b7; 
+height: 50px;   
+color: wheat;
+cursor: pointer;
+}
+.topnav2{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #e0d9bc;
+}
+.topnav2 div{
+width: 90%;
+display: flex;
+}
+.topnav2 div img{
+width: 500px;
+height: 70px;
+}
+.topnav2 div ul{
+width:50% ;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.topnav2 div ul li{
+display: inline-block;
+list-style-type: none;
+width: 100px;
+height: 40px;
+font-size: 20px;
+font-family: tahoma;
+}
+.topnav2Dis{
+display: none;
+justify-content: center;
+align-items: center;
+background-color: #e0d9bc;
+position: sticky;
+top: 0;
+z-index: 9999;
+width: 100%;
+animation: fadeIn 1s;
+}
+.topnav2 a, .topnav2Dis a{
+color: #1E2F23;
+font-family: cursive;
+transition: 500ms;
+}
+.topnav2 a:link:hover, .topnav2Dis a:link:hover{
+text-decoration: underline;
+color: #945045;
+}
+.topnav2 a:visited:hover, .topnav2Dis a:visited:hover{
+text-decoration: underline;
+color: #945045;
+}
+.topnav2 a:link, .topnav2Dis a:link{
+text-decoration: none;
+color: #43a360;
+}
+.topnav2 a:visited, .topnav2Dis a:visited{
+text-decoration: none;
+color: #43a360;
+}
+.topnav2Dis div{
+width: 90%;
+display: flex;
+}
+.topnav2Dis div img{
+width: 500px;
+height: 70px;
+}
+.topnav2Dis div ul{
+width:50% ;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.topnav2Dis div ul li{
+display: inline-block;
+list-style-type: none;
+width: 100px;
+height: 40px;
+font-size: 20px;
+font-family: tahoma;
+}
+#hBack{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 200px;
+    width:100%;
+    background: linear-gradient(to right, #1E2F23, #945045,#945045);
+}
+#hBack h2{
+    margin-top: 50px;
+    font-family: cursive;
+    font-size: 30px;
+    color: #6a8e84;
+}
+/* start work*/
+.container{
+        display: flex;
+        gap: 20px;
+        padding: 2em;
+}
+.container img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border: 5px solid #945045;
+        border-radius: 30px;
+    }
+    #imgConta{
+        align-self: end;
+        width: 180px;
+        display: flex;
+        min-height: 50px;
+        justify-content: center;
+        
+    }
+    #buttonHand {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border: none;
+        z-index: -1;
+        border-radius: 0px;
+        animation: floating 2s infinite;
+        position: absolute;
+    }
+    #Heading{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 20px;
+        /* position: sticky; */
+        top: 0;
+    }
+    #goDown{
+        display: block;
+        margin-bottom: 50px;
+    }
+    #logo{
+        width: 70px;
+        height: 70px;
+    }
+    /* ssl injection */
+    #formH2 {
+    text-transform: uppercase;
+    color: #6a8e84;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+    .applyModal{
+        display:none;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999999;
+        background-color: #000000b0;
+        animation: fadeIn 0.5s ;
+        height: 100vh;
+        width: 100%;
+        backdrop-filter: blur(10px);
+    }
+    #nameCont{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    #btnCont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #submitBtn{
+        font-size: 1em;
+        outline: none;
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px;
+        font-family: cursive;
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+        transition: 400ms;
+        background: #43a360;
+
+        }
+    #submitBtn:hover{
+        background-color: #945045;
+        color: white;
+    }
+    #submitBtn.disabled {
+    }
+    
+    #submitBtn.disabled:hover {
+        opacity: 0.5; /* Faint hover color */
+      }
+
+       .underline{
+                height: 30px;
+                width: 150px;
+                border: none;
+                border-bottom: 1px solid black;
+              }
+              .signature{
+                display: flex;
+              }
+              .signatureDet{
+                width: 50%;
+              }
+#applicationForm::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+    background: #e0d9bc;
+    border-radius: 10px;
+}
+#applicationForm::-webkit-scrollbar-thumb {
+    background: #43a360;
+    border-radius: 10px;
+    /* background: linear-gradient(left, #4A4A4A, #404040); */
+    box-shadow: inset 0 0 1px 1px #191919;
+}
+#applicationForm::-webkit-scrollbar-track {
+    border-radius: 10px;
+    /* background: linear-gradient(left, #212121, #323232); */
+    box-shadow: 0 0 1px 1px #111;
+}
+    #applicationForm{  
+        background: linear-gradient(180deg,#e0d9bc,#9b7f58d6,#754400ba);        border-radius: 40px;
+        box-shadow: 0 0 17px 2px #1d032ab8;
+        flex-wrap: wrap;
+        height: 15em;
+        width: 50em;
+        height: 80%;
+        padding:20px;
+        overflow-y: scroll;
+        z-index: 99999999;
+        color: #e0d9bc;
+        font-size: 15px;
+
+    }
+    #applicationForm input{
+    font-size: 1em;
+    outline: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    padding: 5px;
+    font-family: cursive;
+    width: 300px;
+    height: 30px;
+    }
+    #applicationForm select {
+        font-size: 1em;
+        outline: none;
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px;
+        font-family: cursive;
+        width: 300px;
+        height: 50px;
+        }
+    .primarySlt{
+        display: none;
+    }
+    .secondarySlt{
+        display: none;
+    }
+    .formInputSects{
+        padding: 20px 0;
+    }
+    #schoolSectionContainerFF{
+        display: flex;
+        gap: 20px;
+    }
+    
+#academics{
+    height: 100%;
+    padding: 3em 0;
+}
+#academicsCont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* justify-content: center; */
+    align-items: center;
+}
+#academicsCont h2{
+    text-align: center;
+    margin: 0;
+    font-family: tahoma;
+    color: #945045;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    justify-content: space-between;
+}
+.apply{
+        width: 180px;
+        align-self: end;
+        padding: 10px;
+        font-style: oblique;
+        font-family: monospace;
+        font-size: 20px;
+        background: #945045;
+        border: none;
+        border-radius: 10px;
+        color: floralwhite;
+        cursor: pointer;
+    
+}
+#nodrop:hover{
+    cursor: no-drop;
+    background-color: #944f4593;
+}
+/* end work*/
+.footer{
+    width: 100%;
+    background: #1E2F23;
+    color: white;
+}
+.footer a:link{
+    color: #e0d9bc;
+}
+.footer a:visited{
+    color: #e0d9bc;
+}
+.footnote{
+    text-align: center;
+    font-family: tahoma;
+}
+#footContact{
+    padding: 20px 30px;
+}
+
+#buttCont {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+}
+#footContact ul li{
+    /* display: inline-block; */
+    list-style-type: none;
+    font-size: 15px;
+    font-family: tahoma;
+}
+.printedForm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#passportC{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 200px;
+    margin: 0 0 20px 0;
+}
+#passport{
+    height: inherit;
+    width: 150px;
+    border: 1px solid black;
+}
+#readInstrc{
+    display: inline;
+    width: 20px !important;
+}
+#checkboxCont{
+    display: flex;
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@keyframes floating{
+    0%{margin-top: -20px;}
+    50%{margin-top: 0em;}
+    100%{margin-top: -20px;}
+}
+@media print {
+    /* new */
+    body * {
+        visibility: hidden;
+      }
+  
+      #applicationOutput,
+      #applicationOutput * {
+        visibility: visible;
+        color: black;
+        font-family: tahoma;
+      }
+  
+      #applicationOutput {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+      #applicationOutput h2{
+        text-align: center;
+        font-size: 25px;
+      }
+    /* new */
+    #academics{
+     display:none
+    }
+    #modal{
+        display: block;
+    }
+    #applicationForm{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        overflow-y: visible;
+    }
+    #btnCont{
+        display: none;
+    }
+    #applicationForm select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        }
+        #nameCont{
+            gap: 0;
+        }
+        #applicationForm select {
+            border: none;
+            outline: none;
+        }
+         #applicationForm input[type=text] {
+            border: none;
+            outline: none;
+        }
+    }
+    /* responsive desgin */
+@media screen and (max-width: 1000px){
+    .topnav {
+        height: 30px;
+        font-size: 15px;
+    }
+    .topnav button {
+        border: none;
+        font-size: 15px;
+        background-color: #8aa0b7;
+        height: 30px;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2 div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2 div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2Dis div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .acadInst {
+        width: 80%;
+        height: auto;
+        transition: 400ms;
+        padding: none;
+    }
+    .thePrincipal {
+        height: 100%;
+        padding: 40px 0;
+    }
+    .prinCont {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #academicsCont {
+        width: 100%;
+    }
+    .container {
+        height: 400px;
+    }
+    .text {
+    /* height: inherit; */
+    text-align: justify;
+    font-size: 13px;
+}
+/* in case if it colides with text edit it here */
+    #footContact {
+    /* padding: 10px 15px; */
+    display: none;
+    }
+    #footContact h1 {
+        font-size: 20px;
+    }
+    #buttCont {
+        height: 210px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 200px;
+    }
+}
+@media screen and (max-width:800px) {
+    .topnav div {
+        color: white;
+        font-size: 11px;
+    }
+    .topnav2 div {
+        width: 100%;
+    }
+    #topnav2imgc{
+        width: 90%;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 12px;
+    }
+    .topnav2 div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2 div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topnav2Dis div {
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 10px;
+    }
+    .topnav2Dis div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2Dis div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hBack {
+        align-items: center;
+        height: 100px;
+    }
+    
+    #hBack h2 {
+     margin-top: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 2em 20px;
+        height: 700px;
+    }
+    #nameCont {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    #schoolSectionContainerFF {
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 400px){
+.topnav2 div ul li {
+    font-size: 9px;
+}
+}
