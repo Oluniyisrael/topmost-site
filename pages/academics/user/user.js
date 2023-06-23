@@ -40,3 +40,17 @@ fetch(database)
             .catch(error => {
             console.log('Error:', error);
         });
+        //hellfire adverted
+        for (let i = 0; i <document.getElementsByClassName('mainContianer').length; i++) {
+            document.getElementsByClassName('mainContianer')[i].style.display = 'none';
+            
+        }
+        for (let i = 0; i < document.getElementsByClassName('li').length; i++) {
+            document.getElementsByClassName('li')[i].addEventListener('click',()=>{
+
+                document.getElementsByClassName('mainContainer')[i].style.display = 'none'
+                console.log(i)
+            })
+            
+        }
+        // document.getElementsByClassName('li')
