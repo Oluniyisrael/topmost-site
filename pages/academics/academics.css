@@ -172,11 +172,15 @@ font-family: tahoma;
     }
     #Heading{
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         padding: 20px;
         /* position: sticky; */
         top: 0;
+    }
+    #goDown{
+        display: block;
+        margin-bottom: 50px;
     }
     #logo{
         width: 70px;
