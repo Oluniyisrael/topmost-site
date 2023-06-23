@@ -29,14 +29,39 @@
                 </ul>
         </nav>
         <section id="user">
-            <div id="mainContainer">
+            <div style="display: none;" class="mainContainer" id= "mainContainer">
                 <h1 id="welcome"></h1>
                 <div id="imageContainer">
-                    <!-- <div id=""> -->
                         <img src="#" alt="..." id="userphoto">
-                    <!-- </div> -->
                 </div>
+                <div id="bioCont">
+                    <p>User details</p>
+                    <table id="bio">
+                        <tr>
+                            <th>Username</th>
+                            <th>Section</th>
+                            <th>Class</th>
+                            <th>Class Number</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td id="username"></td>
+                            <td id="section"></td>
+                            <td id="class"></td>
+                            <td id="classNumber"></td>
+                            <td id="age"></td>
+                        </tr>
+                       
+                    </table>
 
+                </div>
+            </div>
+            
+            <div class="mainContainer"  id="results">
+                <div class="resultLine">
+                    You dont have any results uploaded yet
+
+                </div>
             </div>
 
         </section>
@@ -60,7 +85,6 @@
     </div>
     <div class="footnote">Copyright © 2023 <span><a href="https://izzyself.netlify.app/">Israelade</a></span>  - Topmost Intercontinetial Academy. All Rights Reserved</div>
 </footer>
-<script src="../../../index/index.js"></script>
 <script src="./user.js"></script>
 </body>
 </html>

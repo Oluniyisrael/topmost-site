@@ -3,9 +3,54 @@
         "id":1,
         "username":"Israel Oluniyi",
         "password":"1234567890",
-        "class": "SS2",
+        "class": "SS2A",
         "class Number":"24",
         "imagesrc":"../../../images/studentImage/Israel Oluniyi.jpg",
+        "age": 17,
+        "section":"Science",
+        "result":{
+            
+                "SS2 first term":{
+                                    "subjects": {
+                                        "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                                        "English":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Physics":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Marketing":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
+                                        "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
+                                        
+                                    
+                                }, "SS2 second term":{
+                                    "subjects": {
+                                        "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                                        "English":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Physics":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Marketing":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                                        "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
+                                        "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
+                                        
+                                    
+                                }
+ 
+
+        }
+        
+    },
+    {
+        "id":2,
+        "username":"Eric Emmanuel",
+        "password":"1234567890",
+        "class": "SS2A",
+        "class Number":"25",
+        "imagesrc":"../../../images/studentImage/Eric Emmanuel.jpg",
         "age": 17,
         "section":"Science",
         "result":{
@@ -30,33 +75,15 @@
         }
     },
     {
-        "id":2,
-        "username":"Eric Emmanuel",
-        "password":"1234567890",
-        "class": "SS2",
+        "id":3,
+        "username":"test",
+        "password":"123",
+        "class": "SS2A",
         "class Number":"25",
         "imagesrc":"../../../images/studentImage/Eric Emmanuel.jpg",
         "age": 17,
         "section":"Science",
         "result":{
-            
-                "SS2 first term":{
-                                    "subjects": {
-                                        "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "English":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Physics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Marketing":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
-                                        "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
-                                        
-                                    
-                                }
- 
-
         }
     }
 ]
