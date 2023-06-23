@@ -11,6 +11,10 @@ fetch(database)
             var welcome = 'Welcome ' + data[userIdNumber].username
             //result
             // console.log(data[userIdNumber].result[0].name)
+            for (let i = 0; i < data[userIdNumber].result.length; i++) {
+                console.log( data[userIdNumber].result[i])
+                
+            }
             // result
             //bio
             document.getElementById('welcome').innerText = welcome

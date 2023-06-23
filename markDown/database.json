@@ -10,34 +10,34 @@
         "section":"Science",
         "result":[
             
-                                {       "name":"SS2 first term",
-                                        "subjects": {
-                                        "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "English":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Physics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Marketing":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
-                                        "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
-                                        
-                                    
-                                },
-                                 {   "name":"SS2 second term",
-                                        "subjects": {
-                                        "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "English":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Physics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Marketing":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
-                                        "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
-                                        "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
-                                }
+            {       "name":"SS2 first term",
+                    "subjects": {
+                    "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                    "English":[10,10,10,10,60,100,"A","Excellent"],
+                    "Physics":[10,10,10,10,60,100,"A","Excellent"],
+                    "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
+                    "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
+                    "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
+                    "Marketing":[10,10,10,10,60,100,"A","Excellent"],
+                    "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                    "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
+                    "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
+                    
+                
+            },
+                {   "name":"SS2 second term",
+                    "subjects": {
+                    "Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                    "English":[10,10,10,10,60,100,"A","Excellent"],
+                    "Physics":[10,10,10,10,60,100,"A","Excellent"],
+                    "Chemistry":[10,10,10,10,60,100,"A","Excellent"],
+                    "Civic Education":[10,10,10,10,60,100,"A","Excellent"],
+                    "Technical Drawing":[10,10,10,10,60,100,"A","Excellent"],
+                    "Marketing":[10,10,10,10,60,100,"A","Excellent"],
+                    "Further Mathematics":[10,10,10,10,60,100,"A","Excellent"],
+                    "Fine Arts ":[10,10,10,10,60,100,"A","Excellent"],
+                    "French":[10,10,10,10,60,100,"A","Excellent"]                                   }
+            }
         ]
         
     },
@@ -92,7 +92,7 @@
         "age": 17,
         "section":"Science",
         "result":[
-            
+
         ]
     }
 ]
