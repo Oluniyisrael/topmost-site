@@ -18,9 +18,47 @@ fetch(database)
                     div.style.cursor = 'pointer'
                     div.innerHTML = data[userIdNumber].result[i].name
                     document.getElementsByClassName('mainContainer')[1].appendChild(div)
+
                     
                 }
+                for (let i = 0; i < document.getElementsByClassName('resultLine').length ; i++) {
+                    document.getElementsByClassName('resultLine')[i].addEventListener('click',()=>{
+                        console.log(i)
+                    })
+                }
             }
+            // i dont understand here 
+            // for table
+            // Assuming the JSON object is stored in a variable called 'data'
+                var result = data[userIdNumber].result[0]; // Accessing the first element of the 'result' array
+
+                // Create the table HTML
+                var tableHTML = '<table>';
+                tableHTML += '<tr><th>Subject</th><th>Marks 1</th><th>Marks 2</th><th>Marks 3</th><th>Marks 4</th><th>Total Marks</th><th>Percentage</th><th>Grade</th><th>Remarks</th></tr>';
+
+                // Loop through the 'subjects' object
+                for (var subject in result.subjects) {
+                if (result.subjects.hasOwnProperty(subject)) {
+                    var subjectData = result.subjects[subject];
+                    var subjectHTML = '<tr>';
+                    subjectHTML += '<td>' + subject + '</td>';
+
+                    // Loop through the marks array for each subject
+                    for (var i = 0; i < subjectData.length; i++) {
+                    subjectHTML += '<td>' + subjectData[i] + '</td>';
+                    }
+
+                    subjectHTML += '</tr>';
+                    tableHTML += subjectHTML;
+                }
+                }
+
+                tableHTML += '</table>';
+
+                // Display the table
+                document.getElementById('table-container').innerHTML = tableHTML;
+
+            // for table 
             // result
             
             //bio
