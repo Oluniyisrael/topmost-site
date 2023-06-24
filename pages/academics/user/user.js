@@ -26,6 +26,68 @@ fetch(database)
                 for (let i = 0; i < document.getElementsByClassName('resultLine').length ; i++) {
                     document.getElementsByClassName('resultLine')[i].addEventListener('click',()=>{
                         console.log(i)
+                        //
+                        var name = data[userIdNumber].result[i].name
+                        var subjects = data[userIdNumber].result[i].subjects
+                        console.log(name)
+                        console.log(subjects)
+                        //
+                        //injected code
+                            var table = document.createElement("table");//
+                            table.classList.add("styled-table"); // Add a CSS class for styling
+
+                            // Create table header row
+                            var thead = document.createElement("thead");
+                            var headerRow = document.createElement("tr");
+
+                            var headerData1 = document.createElement("th");
+                            headerData1.textContent = "Subject";
+                            headerRow.appendChild(headerData1);
+
+                            var headerData2 = document.createElement("th");
+                            headerData2.textContent = "Scores";
+                            headerRow.appendChild(headerData2);
+
+                            thead.appendChild(headerRow);
+                            table.appendChild(thead);
+
+                            // Create table body
+                            var tbody = document.createElement("tbody");
+
+                            // Loop through subjects and create table rows
+                            for (var subject in subjects) {
+                            var rowData = subjects[subject];
+
+                            var row = document.createElement("tr");
+
+                            // Subject column
+                            var subjectData = document.createElement("td");
+                            subjectData.textContent = subject;
+                            row.appendChild(subjectData);
+
+                            // Scores column
+                            var scoreData = document.createElement("td");
+                            scoreData.textContent = rowData.slice(0, -2).join(", "); // Extract scores and join with commas
+                            row.appendChild(scoreData);
+
+                            tbody.appendChild(row);
+                            }
+
+                            table.appendChild(tbody);
+
+                            // Append the table to the document body
+                            var displayModal = document.createElement('section')
+                            // var result = document.createElement('div')
+                            displayModal.className = 'displayModal'
+                            displayModal.style.display= 'flex'
+                            displayModal.appendChild(table)
+                            
+                            
+                            document.body.appendChild(displayModal);
+                            //injected code
+                        
+                    //
+
                     })
                 }
             }
@@ -114,35 +176,35 @@ fetch(database)
 
 
 
-        var something = 
-                   // for table
-            // Assuming the JSON object is stored in a variable called 'data'
-            // var result = data[userIdNumber].result[0]; // Accessing the first element of the 'result' array
+        // var something = 
+        //            // for table
+        //     // Assuming the JSON object is stored in a variable called 'data'
+        //     // var result = data[userIdNumber].result[0]; // Accessing the first element of the 'result' array
 
-            // Create the table HTML
-            // var tableHTML = '<table>';
-            tableHTML += '<tr><th>Subject</th><th>Marks 1</th><th>Marks 2</th><th>Marks 3</th><th>Marks 4</th><th>Total Marks</th><th>Percentage</th><th>Grade</th><th>Remarks</th></tr>';
+        //     // Create the table HTML
+        //     // var tableHTML = '<table>';
+        //     tableHTML += '<tr><th>Subject</th><th>Marks 1</th><th>Marks 2</th><th>Marks 3</th><th>Marks 4</th><th>Total Marks</th><th>Percentage</th><th>Grade</th><th>Remarks</th></tr>';
 
-            // Loop through the 'subjects' object
-            for (var subject in result.subjects) {
-            if (result.subjects.hasOwnProperty(subject)) {
-                var subjectData = result.subjects[subject];
-                var subjectHTML = '<tr>';
-                subjectHTML += '<td>' + subject + '</td>';
+        //     // Loop through the 'subjects' object
+        //     for (var subject in result.subjects) {
+        //     if (result.subjects.hasOwnProperty(subject)) {
+        //         var subjectData = result.subjects[subject];
+        //         var subjectHTML = '<tr>';
+        //         subjectHTML += '<td>' + subject + '</td>';
 
-                // Loop through the marks array for each subject
-                for (var i = 0; i < subjectData.length; i++) {
-                subjectHTML += '<td>' + subjectData[i] + '</td>';
-                }
+        //         // Loop through the marks array for each subject
+        //         for (var i = 0; i < subjectData.length; i++) {
+        //         subjectHTML += '<td>' + subjectData[i] + '</td>';
+        //         }
 
-                subjectHTML += '</tr>';
-                tableHTML += subjectHTML;
-            }
-            }
+        //         subjectHTML += '</tr>';
+        //         tableHTML += subjectHTML;
+        //     }
+        //     }
 
-            tableHTML += '</table>';
+        //     tableHTML += '</table>';
 
-            // Display the table
-            document.getElementById('table-container').innerHTML = tableHTML;
+        //     // Display the table
+        //     document.getElementById('table-container').innerHTML = tableHTML;
 
-        // for table 
+        // // for table 
