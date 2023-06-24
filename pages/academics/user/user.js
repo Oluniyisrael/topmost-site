@@ -27,10 +27,10 @@ fetch(database)
                     document.getElementsByClassName('resultLine')[i].addEventListener('click',()=>{
                         console.log(i)
                         //
-                        var name = data[userIdNumber].result[i].name
+                        // var name = data[userIdNumber].result[i].name
                         var subjects = data[userIdNumber].result[i].subjects
-                        console.log(name)
-                        console.log(subjects)
+                        // console.log(name)
+                        // console.log(subjects)
                         //
                         //injected code
                             var table = document.createElement("table");//
@@ -131,6 +131,12 @@ fetch(database)
             })
             
         }
+        document.addEventListener('click',(e)=>{
+            var displayModal = document.getElementsByClassName('displayModal')[0]
+                        if (e.target == displayModal) {
+                document.body.removeChild(displayModal)
+              }
+        })
         // document.getElementsByClassName('li')
 
 
