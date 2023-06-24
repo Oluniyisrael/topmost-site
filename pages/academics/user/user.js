@@ -26,131 +26,102 @@ fetch(database)
                 for (let index = 0; index < document.getElementsByClassName('resultLine').length ; index++) {
                     document.getElementsByClassName('resultLine')[index].addEventListener('click',()=>{
                         console.log(index)
-                        // var name = data[userIdNumber].result[i].name
-                        var subjects = data[userIdNumber].result[index].subjects
-                        //
-                        // // var name = data[userIdNumber].result[i].name
-                        // var subjects = data[userIdNumber].result[i].subjects
-                        // // console.log(name)
-                        // // console.log(subjects)
-                        // //
-                        // //injected code
-                        //     var table = document.createElement("table");//
-                        //     table.classList.add("resultsTable"); // Add a CSS class for styling
+                            var subjects = data[userIdNumber].result[index].subjects
+                                var table = document.createElement("table");
+                                table.classList.add("resultsTable"); 
 
-                        //     // Create table header row
-                        //     var thead = document.createElement("thead");
-                        //     var headerRow = document.createElement("tr");
+                                // Create table header row
+                                var thead = document.createElement("thead");
+                                var headerRow = document.createElement("tr");
 
-                        //     var headerData1 = document.createElement("th");
-                        //     headerData1.textContent = "Subject";
-                        //     headerRow.appendChild(headerData1);
+                                var headerData1 = document.createElement("th");
+                                headerData1.textContent = "Subject";
+                                headerRow.appendChild(headerData1);
 
-                        //     var headerData2 = document.createElement("th");
-                        //     headerData2.textContent = "Scores";
-                        //     headerRow.appendChild(headerData2);
+                                for (var i = 1; i <= 4; i++) {
+                                var headerData = document.createElement("th");
+                                headerData.textContent = "CA " + i;
+                                headerRow.appendChild(headerData);
+                                }
 
-                        //     thead.appendChild(headerRow);
-                        //     table.appendChild(thead);
+                                var headerData5 = document.createElement("th");
+                                headerData5.textContent = "Exam";
+                                headerRow.appendChild(headerData5);
 
-                        //     // Create table body
-                        //     var tbody = document.createElement("tbody");
+                                var headerData6 = document.createElement("th");
+                                headerData6.textContent = "Total CA";
+                                headerRow.appendChild(headerData6);
 
-                        //     // Loop through subjects and create table rows
-                        //     for (var subject in subjects) {
-                        //     var rowData = subjects[subject];
+                                var headerData7 = document.createElement("th");
+                                headerData7.textContent = "Grade";
+                                headerRow.appendChild(headerData7);
 
-                        //     var row = document.createElement("tr");
+                                var headerData8 = document.createElement("th");
+                                headerData8.textContent = "Remarks";
+                                headerRow.appendChild(headerData8);
 
-                        //     // Subject column
-                        //     var subjectData = document.createElement("td");
-                        //     subjectData.textContent = subject;
-                        //     row.appendChild(subjectData);
+                                thead.appendChild(headerRow);
+                                table.appendChild(thead);
 
-                        //     // Scores column
-                        //     var scoreData = document.createElement("td");
-                        //     scoreData.textContent = rowData.slice(0, -2).join(", "); // Extract scores and join with commas
-                        //     row.appendChild(scoreData);
+                                // Create table body
+                                var tbody = document.createElement("tbody");
 
-                        //     tbody.appendChild(row);
-                        //     }
+                                // Loop through subjects and create table rows
+                                for (var subject in subjects) {
+                                var rowData = subjects[subject];
 
-                        //     table.appendChild(tbody);
+                                var row = document.createElement("tr");
+
+                                // Subject column
+                                var subjectData = document.createElement("td");
+                                subjectData.textContent = subject;
+                                row.appendChild(subjectData);
+
+                                // Scores columns
+                                for (var i = 0; i < rowData.length; i++) {
+                                    var scoreData = document.createElement("td");
+                                    scoreData.textContent = rowData[i];
+                                    row.appendChild(scoreData);
+                                }
+
+                                tbody.appendChild(row);
+                                }
+
+                                table.appendChild(tbody);
 
 
-                            // Append the table to the document body
-                            
-                            // Create a table element
-var table = document.createElement("table");
-table.classList.add("resultsTable"); // Add a CSS class for styling
+                                var div = document.createElement('div')
+                                var header =document.createElement('div')
+                                var logo = document.createElement('img')
+                                var h2 = document.createElement('h2')
+                                var studentInfo = document.createElement('div');
+                                var info = document.createElement('p')
+                                var nameOfResult = document.createElement('h1')
+                                info.textContent = `Name: ${data[userIdNumber].username}      Class:  ${data[userIdNumber].class} Age: Name: ${data[userIdNumber].age}       Section: Name: ${data[userIdNumber].section}`
+                                header.className = 'Heading'
+                                div.className = 'result'
+                                logo.src = '../../../images/something.png'
+                                logo.className = 'headerImg'
+                                studentInfo.className = 'studentinfo'
+                                h2.textContent = 'topmost Intercontinential academy'
+                                h2.className = 'Headingh2'
+                                nameOfResult.textContent = data[userIdNumber].result[index].name + ' Results'
 
-// Create table header row
-var thead = document.createElement("thead");
-var headerRow = document.createElement("tr");
-
-var headerData1 = document.createElement("th");
-headerData1.textContent = "Subject";
-headerRow.appendChild(headerData1);
-
-for (var i = 1; i <= 4; i++) {
-  var headerData = document.createElement("th");
-  headerData.textContent = "Marks " + i;
-  headerRow.appendChild(headerData);
-}
-
-var headerData5 = document.createElement("th");
-headerData5.textContent = "Total Marks";
-headerRow.appendChild(headerData5);
-
-var headerData6 = document.createElement("th");
-headerData6.textContent = "Percentage";
-headerRow.appendChild(headerData6);
-
-var headerData7 = document.createElement("th");
-headerData7.textContent = "Grade";
-headerRow.appendChild(headerData7);
-
-var headerData8 = document.createElement("th");
-headerData8.textContent = "Remarks";
-headerRow.appendChild(headerData8);
-
-thead.appendChild(headerRow);
-table.appendChild(thead);
-
-// Create table body
-var tbody = document.createElement("tbody");
-
-// Loop through subjects and create table rows
-for (var subject in subjects) {
-  var rowData = subjects[subject];
-
-  var row = document.createElement("tr");
-
-  // Subject column
-  var subjectData = document.createElement("td");
-  subjectData.textContent = subject;
-  row.appendChild(subjectData);
-
-  // Scores columns
-  for (var i = 0; i < rowData.length; i++) {
-    var scoreData = document.createElement("td");
-    scoreData.textContent = rowData[i];
-    row.appendChild(scoreData);
-  }
-
-  tbody.appendChild(row);
-}
-
-table.appendChild(tbody);
-
-// Append the table to the document body
-// document.body.appendChild(table);
                             var displayModal = document.createElement('section')
-                            // var result = document.createElement('div')
                             displayModal.className = 'displayModal'
                             displayModal.style.display= 'flex'
-                            displayModal.appendChild(table)
-                            
+                            //
+                            //
+                            header.appendChild(logo)
+                            header.appendChild(h2)
+                            studentInfo.appendChild(info)
+                            studentInfo.appendChild(nameOfResult)
+//
+                            //
+                            div.appendChild(header)
+                            div.appendChild(studentInfo)
+                            div.appendChild(table)
+                            displayModal.appendChild(div)
                             
                             document.body.appendChild(displayModal);
                             //injected code
@@ -160,7 +131,6 @@ table.appendChild(tbody);
                     })
                 }
             }
-            // i dont understand here 
  
             // result
             
@@ -195,8 +165,6 @@ table.appendChild(tbody);
                
                 closeUnsuedDivs()
                 document.getElementsByClassName('mainContainer')[i].style.display = 'block'
-                console.log(i)
-
             })
             
         }

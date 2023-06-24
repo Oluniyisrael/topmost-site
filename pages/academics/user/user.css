@@ -316,8 +316,50 @@
         width: 100%;
         backdrop-filter: blur(10px);
  }
- .resultsTable, .resultsTable th,.resultsTable td{
-    width: auto;
+ .resultsTable{
+    width: 90%;
     border: 1px solid black;
     border-collapse: collapse;
  }
+  .resultsTable th,.resultsTable td{
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;    width: auto;
+  }
+  .Heading {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    /* position: sticky; */
+    top: 0;
+}
+.Headingh2 {
+    text-transform: uppercase;
+    color: #6a8e84;
+    font-family: monospace;
+    font-size: 20px;
+}
+.result{
+    height: 100%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: tahoma;
+}
+.headerImg{
+    width: 60px;
+    height: 60px;
+}
+.studentinfo {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.studentinfo h1{
+    text-align: center;
+
+}
