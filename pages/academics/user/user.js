@@ -23,59 +23,128 @@ fetch(database)
                     
                 }
                 
-                for (let i = 0; i < document.getElementsByClassName('resultLine').length ; i++) {
-                    document.getElementsByClassName('resultLine')[i].addEventListener('click',()=>{
-                        console.log(i)
-                        //
+                for (let index = 0; index < document.getElementsByClassName('resultLine').length ; index++) {
+                    document.getElementsByClassName('resultLine')[index].addEventListener('click',()=>{
+                        console.log(index)
                         // var name = data[userIdNumber].result[i].name
-                        var subjects = data[userIdNumber].result[i].subjects
-                        // console.log(name)
-                        // console.log(subjects)
+                        var subjects = data[userIdNumber].result[index].subjects
                         //
-                        //injected code
-                            var table = document.createElement("table");//
-                            table.classList.add("styled-table"); // Add a CSS class for styling
+                        // // var name = data[userIdNumber].result[i].name
+                        // var subjects = data[userIdNumber].result[i].subjects
+                        // // console.log(name)
+                        // // console.log(subjects)
+                        // //
+                        // //injected code
+                        //     var table = document.createElement("table");//
+                        //     table.classList.add("resultsTable"); // Add a CSS class for styling
 
-                            // Create table header row
-                            var thead = document.createElement("thead");
-                            var headerRow = document.createElement("tr");
+                        //     // Create table header row
+                        //     var thead = document.createElement("thead");
+                        //     var headerRow = document.createElement("tr");
 
-                            var headerData1 = document.createElement("th");
-                            headerData1.textContent = "Subject";
-                            headerRow.appendChild(headerData1);
+                        //     var headerData1 = document.createElement("th");
+                        //     headerData1.textContent = "Subject";
+                        //     headerRow.appendChild(headerData1);
 
-                            var headerData2 = document.createElement("th");
-                            headerData2.textContent = "Scores";
-                            headerRow.appendChild(headerData2);
+                        //     var headerData2 = document.createElement("th");
+                        //     headerData2.textContent = "Scores";
+                        //     headerRow.appendChild(headerData2);
 
-                            thead.appendChild(headerRow);
-                            table.appendChild(thead);
+                        //     thead.appendChild(headerRow);
+                        //     table.appendChild(thead);
 
-                            // Create table body
-                            var tbody = document.createElement("tbody");
+                        //     // Create table body
+                        //     var tbody = document.createElement("tbody");
 
-                            // Loop through subjects and create table rows
-                            for (var subject in subjects) {
-                            var rowData = subjects[subject];
+                        //     // Loop through subjects and create table rows
+                        //     for (var subject in subjects) {
+                        //     var rowData = subjects[subject];
 
-                            var row = document.createElement("tr");
+                        //     var row = document.createElement("tr");
 
-                            // Subject column
-                            var subjectData = document.createElement("td");
-                            subjectData.textContent = subject;
-                            row.appendChild(subjectData);
+                        //     // Subject column
+                        //     var subjectData = document.createElement("td");
+                        //     subjectData.textContent = subject;
+                        //     row.appendChild(subjectData);
 
-                            // Scores column
-                            var scoreData = document.createElement("td");
-                            scoreData.textContent = rowData.slice(0, -2).join(", "); // Extract scores and join with commas
-                            row.appendChild(scoreData);
+                        //     // Scores column
+                        //     var scoreData = document.createElement("td");
+                        //     scoreData.textContent = rowData.slice(0, -2).join(", "); // Extract scores and join with commas
+                        //     row.appendChild(scoreData);
 
-                            tbody.appendChild(row);
-                            }
+                        //     tbody.appendChild(row);
+                        //     }
 
-                            table.appendChild(tbody);
+                        //     table.appendChild(tbody);
+
 
                             // Append the table to the document body
+                            
+                            // Create a table element
+var table = document.createElement("table");
+table.classList.add("resultsTable"); // Add a CSS class for styling
+
+// Create table header row
+var thead = document.createElement("thead");
+var headerRow = document.createElement("tr");
+
+var headerData1 = document.createElement("th");
+headerData1.textContent = "Subject";
+headerRow.appendChild(headerData1);
+
+for (var i = 1; i <= 4; i++) {
+  var headerData = document.createElement("th");
+  headerData.textContent = "Marks " + i;
+  headerRow.appendChild(headerData);
+}
+
+var headerData5 = document.createElement("th");
+headerData5.textContent = "Total Marks";
+headerRow.appendChild(headerData5);
+
+var headerData6 = document.createElement("th");
+headerData6.textContent = "Percentage";
+headerRow.appendChild(headerData6);
+
+var headerData7 = document.createElement("th");
+headerData7.textContent = "Grade";
+headerRow.appendChild(headerData7);
+
+var headerData8 = document.createElement("th");
+headerData8.textContent = "Remarks";
+headerRow.appendChild(headerData8);
+
+thead.appendChild(headerRow);
+table.appendChild(thead);
+
+// Create table body
+var tbody = document.createElement("tbody");
+
+// Loop through subjects and create table rows
+for (var subject in subjects) {
+  var rowData = subjects[subject];
+
+  var row = document.createElement("tr");
+
+  // Subject column
+  var subjectData = document.createElement("td");
+  subjectData.textContent = subject;
+  row.appendChild(subjectData);
+
+  // Scores columns
+  for (var i = 0; i < rowData.length; i++) {
+    var scoreData = document.createElement("td");
+    scoreData.textContent = rowData[i];
+    row.appendChild(scoreData);
+  }
+
+  tbody.appendChild(row);
+}
+
+table.appendChild(tbody);
+
+// Append the table to the document body
+// document.body.appendChild(table);
                             var displayModal = document.createElement('section')
                             // var result = document.createElement('div')
                             displayModal.className = 'displayModal'

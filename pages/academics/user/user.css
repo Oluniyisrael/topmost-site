@@ -316,3 +316,8 @@
         width: 100%;
         backdrop-filter: blur(10px);
  }
+ .resultsTable, .resultsTable th,.resultsTable td{
+    width: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
