@@ -98,7 +98,7 @@ fetch(database)
                                 var info = document.createElement('p')
                                 var nameOfResult = document.createElement('h1')
                                 var printButton = document.createElement('button')
-                                info.textContent = `Name: ${data[userIdNumber].username}      Class:  ${data[userIdNumber].class} Age: Name: ${data[userIdNumber].age}       Section: Name: ${data[userIdNumber].section}`
+                                info.textContent = `Name: ${data[userIdNumber].username}      Class:  ${data[userIdNumber].class} Age: ${data[userIdNumber].age}       Section:  ${data[userIdNumber].section}`
                                 header.className = 'Heading'
                                 div.className = 'result'
                                 logo.src = '../../../images/something.png'
