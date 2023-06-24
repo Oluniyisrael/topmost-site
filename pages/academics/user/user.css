@@ -363,3 +363,11 @@
     text-align: center;
 
 }
+.printButton{
+
+}
+@media print {
+   .printButton{
+    visibility: hidden;
+   }
+    }

@@ -97,11 +97,15 @@ fetch(database)
                                 var studentInfo = document.createElement('div');
                                 var info = document.createElement('p')
                                 var nameOfResult = document.createElement('h1')
+                                var printButton = document.createElement('button')
                                 info.textContent = `Name: ${data[userIdNumber].username}      Class:  ${data[userIdNumber].class} Age: Name: ${data[userIdNumber].age}       Section: Name: ${data[userIdNumber].section}`
                                 header.className = 'Heading'
                                 div.className = 'result'
                                 logo.src = '../../../images/something.png'
                                 logo.className = 'headerImg'
+                                printButton.textContent = 'Print'
+                                printButton.className = 'printButton'
+                                printButton.onclick = ()=>{window.print()}
                                 studentInfo.className = 'studentinfo'
                                 h2.textContent = 'topmost Intercontinential academy'
                                 h2.className = 'Headingh2'
@@ -121,6 +125,7 @@ fetch(database)
                             div.appendChild(header)
                             div.appendChild(studentInfo)
                             div.appendChild(table)
+                            div.appendChild(printButton)
                             displayModal.appendChild(div)
                             
                             document.body.appendChild(displayModal);
