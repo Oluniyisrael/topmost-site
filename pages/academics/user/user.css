@@ -253,6 +253,28 @@
         0%{opacity: 0%;}
         100%{opacity: 100%;}
     }@media screen and (max-width: 1000px){
+        .Headingh2 {
+            text-transform: uppercase;
+            color: #6a8e84;
+            font-family: monospace;
+            font-size: 10px !important;
+        }
+        .resultsTable {
+            width: 90%;
+            border: 1px solid black;
+            font-size: 6px !important;
+            border-collapse: collapse;
+        }
+        .result {
+            height: 85% !important;
+            width: 300px !important;
+        }
+        .studentinfo p {
+            font-size: 10px;
+            text-align: center;
+            width: 100%;
+            /* font-family: tahoma; */
+        }
         body{
             min-height: 100vh;
         }
@@ -435,5 +457,27 @@
    .printButton{
     visibility: hidden;
    }
+   .Headingh2 {
+    text-transform: uppercase;
+    color: #6a8e84;
+    font-family: monospace;
+    font-size: 20px !important;
+}
+.studentinfo p {
+    font-size: 16px !important;
+    text-align: center;
+    width: 100%;
+    /* font-family: tahoma; */
+}
+.resultsTable {
+    width: 90%;
+    border: 1px solid black;
+    font-size: 16px !important;
+    border-collapse: collapse;
+}
+.result {
+    height: 100% !important;
+    width: 800px !important;
+}
     }
     
