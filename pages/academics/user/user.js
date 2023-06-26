@@ -1,9 +1,14 @@
 var userIdNumber = localStorage.getItem('LoggedinUser');
-var database = '../../../markDown/database.json';
-
-if (userIdNumber === null) {
+if (userIdNumber == null) {
     window.location.href = '../academics.html'
 }
+var button = document.getElementById('logOut')
+button.onclick = () =>{
+    localStorage.setItem('LoggedinUser',null)
+    window.location.href = '../../academics/academics.html'
+}
+var database = '../../../markDown/database.json';
+
 fetch(database)
         .then(response => response.json())
         .then(data => {

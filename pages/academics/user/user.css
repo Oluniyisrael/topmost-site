@@ -38,8 +38,16 @@
         font-size: 20px;
         background-color: #8aa0b7; 
         height: 50px;   
+        width: 120px;
         color: wheat;
         cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        }
+        .topnav button img{
+            width: 30px;
+            height: 30px;
         }
     .userSideBar{
         /* display: none; */
