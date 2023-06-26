@@ -59,6 +59,7 @@
         left: 0;
         bottom: 0;
         top: 0;
+        transition: 800ms;
         /* overflow: hidden; */
     }
     #sideBarimgc {
@@ -263,7 +264,6 @@
         }
         .userSideBar{
             margin-left:-200px ;
-            transition: 800ms;
         }
         .footer {
             width: 100%;
