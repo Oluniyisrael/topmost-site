@@ -261,3 +261,9 @@ fetch(database)
         //     document.getElementById('table-container').innerHTML = tableHTML;
 
         // // for table 
+        var burger = document.getElementById('hamburger');
+        burger.addEventListener('click',toggleSideBar)
+function toggleSideBar(){
+    var sideBar = document.getElementsByClassName('userSideBar');
+    sideBar[0].classList.toggle('normal')
+}
