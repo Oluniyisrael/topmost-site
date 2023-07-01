@@ -15,9 +15,9 @@ fetch(database)
             //result
             if (data[userIdNumber].result.length !== 0 ) {
                 document.getElementsByClassName('mainContainer')[1].innerHTML = ''
-                console.log(data[userIdNumber].result.length)
+                // console.log(data[userIdNumber].result.length)
                 for (let i = 0; i < data[userIdNumber].result.length; i++) {
-                    console.log( data[userIdNumber].result[i])
+                    // console.log( data[userIdNumber].result[i])
                     var div = document.createElement('div')
                     div.className = 'resultLine'
                     div.style.cursor = 'pointer'
@@ -145,7 +145,7 @@ fetch(database)
             // result
             
             //bio
-            console.log(data[userIdNumber].username)
+            // console.log(data[userIdNumber].username)
             var welcome = 'Welcome ' + data[userIdNumber].username
             document.getElementById('welcome').innerText = welcome
             document.getElementsByTagName('title')[0].innerHTML +=data[userIdNumber].username
