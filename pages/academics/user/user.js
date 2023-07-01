@@ -184,17 +184,14 @@ fetch(database)
                 document.body.removeChild(displayModal)
               }
         })
+        document.getElementById('user').addEventListener('click',(e)=>{
+            if(document.getElementsByClassName('userSideBar')[0].classList[1] ==='normal'){
+                document.getElementsByClassName('userSideBar')[0].classList.remove('normal')
+            }
+        }
+        )
         // document.getElementsByClassName('li')
-
-
-
-
-
-
-
-
-
-
+        // document.getElementsByClassName('userSideBar')[0].classList[1] ==='normal'
 
 
 
