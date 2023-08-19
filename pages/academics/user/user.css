@@ -248,6 +248,17 @@
     .normal{
         margin-left: 0 !important;
     }
+    .studentImgCOnt{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: end;
+    }
+    .studentResultImg{
+        width: 65px;
+        margin-right: 10px;
+        height: 80px;
+    }
 
     @keyframes fadeIn {
         0%{opacity: 0%;}
@@ -437,8 +448,8 @@
     font-family: tahoma;
 }
 .headerImg{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 .studentinfo {
     padding: 30px 0;

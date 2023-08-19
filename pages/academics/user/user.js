@@ -121,6 +121,17 @@ fetch(database)
                             displayModal.style.display= 'flex'
                             //
                             //
+//!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
+                            var imgCont = document.createElement('div')
+                            imgCont.className = 'studentImgCOnt'
+                            var studentImg = document.createElement('img');
+                            studentImg.className = 'studentResultImg'
+                            studentImg.src = data[userIdNumber].imagesrc
+                            imgCont.appendChild(studentImg)
+                            //
+
+                            //
+                            //
                             header.appendChild(logo)
                             header.appendChild(h2)
                             studentInfo.appendChild(info)
@@ -128,6 +139,11 @@ fetch(database)
 //
                             //
                             div.appendChild(header)
+                            //<span> Location: Ijah Road, Sabon-Wuse, Tafa LGA, Niger State. &nbsp;</span>
+                            //<span> <a href="tel:+2348150753822">+2348150753822</a> &nbsp;</span>
+                            //add to header
+                            div.appendChild(imgCont) //inject image
+                            
                             div.appendChild(studentInfo)
                             div.appendChild(table)
                             div.appendChild(printButton)
