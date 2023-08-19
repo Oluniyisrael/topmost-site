@@ -172,7 +172,7 @@ fetch(database)
             document.getElementById("class").textContent = data[userIdNumber].class;
             document.getElementById("classNumber").textContent = data[userIdNumber]["class Number"];
             document.getElementById("age").textContent = data[userIdNumber].age;
-            document.getElementById("section").textContent = data[userIdNumber].section;
+            document.getElementById("section").textContent = data[userIdNumber].Section;
             // tabledata
             })
             .catch(error => {
