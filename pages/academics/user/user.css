@@ -312,11 +312,12 @@
             width: 100%;
             background: #1E2F23;
             color: white;
-            position: absolute;
+            position: fixed;
             bottom: 0;
         }
-        .mainContainer{
-            margin-left:0;
+        .mainContainer {
+            margin-left: 0;
+            padding: 0 0 5em 0;
         }
         .acadInst {
             width: 80%;
