@@ -7,7 +7,12 @@
         "class Number":"24",
         "imagesrc":"../../../images/studentImage/Israel Oluniyi.jpg",
         "age": 17,
-        "section":"Science",
+        "state":"Osun",
+        "LGA":"Ede North",
+        "Gender":"Male",
+        "Religion":"Christian",
+        "Section":"Science",
+        
         "result":[
             
             {       "name":"SS2 first term",
@@ -62,7 +67,12 @@
         "class Number":"25",
         "imagesrc":"../../../images/studentImage/Eric Emmanuel.jpg",
         "age": 17,
-        "section":"Science",
+        "state":"Osun",
+        "LGA":"Ede North",
+        "Gender":"Male",
+        "Religion":"Christian",
+        "Section":"Science",
+        
         "result":[
             
             {       "name":"SS2 first term",
@@ -103,7 +113,12 @@
         "class Number":"25",
         "imagesrc":"../../../images/studentImage/",
         "age": 17,
-        "section":"Science",
+        "state":"Osun",
+        "LGA":"Ede North",
+        "Gender":"Male",
+        "Religion":"Christian",
+        "Section":"Science",
+        
         "result":[
 
         ]
