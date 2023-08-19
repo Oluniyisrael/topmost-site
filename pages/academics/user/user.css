@@ -254,10 +254,10 @@
         display: flex;
         justify-content: end;
     }
-    .studentResultImg{
-        width: 65px;
+    .studentResultImg {
+        width: 130px;
         margin-right: 10px;
-        height: 80px;
+        height: 160px;
     }
 
     @keyframes fadeIn {
@@ -363,6 +363,11 @@
             flex-direction: column;
             justify-content: space-evenly;
             min-height: 200px;
+        }
+        .studentResultImg {
+            width: 65px;
+            margin-right: 10px;
+            height: 85px;
         }
     }
     @media screen and (max-width:800px) {
