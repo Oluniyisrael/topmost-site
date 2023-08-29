@@ -262,7 +262,7 @@ fetch(database)
         //         // Loop through the marks array for each subject
         //         for (var i = 0; i < subjectData.length; i++) {
         //         subjectHTML += '<td>' + subjectData[i] + '</td>';
-        //         }
+        //         } 
 
         //         subjectHTML += '</tr>';
         //         tableHTML += subjectHTML;
