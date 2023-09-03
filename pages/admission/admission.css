@@ -241,8 +241,7 @@ font-family: tahoma;
         background-color: #945045;
         color: white;
     }
-    #submitBtn.disabled {
-    }
+
     
     #submitBtn.disabled:hover {
         opacity: 0.5; /* Faint hover color */
@@ -499,6 +498,9 @@ font-family: tahoma;
     }
     /* responsive desgin */
 @media screen and (max-width: 1000px){
+    *{
+        font-family: tahoma !important;
+    }
     .topnav {
         height: 30px;
         font-size: 15px;
