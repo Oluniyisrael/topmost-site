@@ -103,7 +103,17 @@ fetch(database)
                                 var info = document.createElement('p')
                                 var nameOfResult = document.createElement('h1')
                                 var printButton = document.createElement('button')
-                                info.textContent = `Name: ${data[userIdNumber].username}      Class:  ${data[userIdNumber].class} Age: ${data[userIdNumber].age}       Section:  ${data[userIdNumber].section}`
+                                info.className = 'info'
+                                info.textContent = `
+                                Name: ${data[userIdNumber].username}    
+                                Class:  ${data[userIdNumber].class}
+                                Age: ${data[userIdNumber].age}       
+                                Section:  ${data[userIdNumber].Section}     
+                                Class Number : ${data[userIdNumber]["class Number"]}
+                                "State": ${data[userIdNumber].state}
+                                "LGA":${data[userIdNumber].LGA}
+                                "Gender":${data[userIdNumber].Gender}
+                                "Religion":${data[userIdNumber].Religion}`
                                 header.className = 'Heading'
                                 div.className = 'result'
                                 logo.src = '../../../images/something.png'
@@ -121,6 +131,9 @@ fetch(database)
                             displayModal.style.display= 'flex'
                             //
                             //
+//!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
+//!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
+//!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
 //!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
                             var imgCont = document.createElement('div')
                             imgCont.className = 'studentImgCOnt'
@@ -173,6 +186,8 @@ fetch(database)
             document.getElementById("classNumber").textContent = data[userIdNumber]["class Number"];
             document.getElementById("age").textContent = data[userIdNumber].age;
             document.getElementById("section").textContent = data[userIdNumber].Section;
+            document.getElementById("state").textContent = data[userIdNumber].state;
+            document.getElementById("gender").textContent = data[userIdNumber].Gender;
             console.log(data[userIdNumber].Section)
             // tabledata
             })
@@ -201,7 +216,7 @@ fetch(database)
                 document.body.removeChild(displayModal)
               }
         })
-        document.getElementById('user').addEventListener('click',(e)=>{
+        document.getElementById('user').addEventListener('click',()=>{
             if(document.getElementsByClassName('userSideBar')[0].classList[1] ==='normal'){
                 document.getElementsByClassName('userSideBar')[0].classList.remove('normal')
             }
