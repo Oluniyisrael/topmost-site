@@ -136,11 +136,12 @@ fetch(database)
 //!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
 //!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
                             var imgCont = document.createElement('div')
-                            
+
                             imgCont.className = 'studentImgCOnt'
                             var studentImg = document.createElement('img');
                             studentImg.className = 'studentResultImg'
                             studentImg.src = data[userIdNumber].imagesrc
+                            imgCont.appendChild(info)
                             imgCont.appendChild(studentImg)
                             //
 
@@ -148,7 +149,7 @@ fetch(database)
                             //
                             header.appendChild(logo)
                             header.appendChild(h2)
-                            studentInfo.appendChild(info)
+                            studentInfo.appendChild(info) // to be removed....
                             studentInfo.appendChild(nameOfResult)
 //
                             //
