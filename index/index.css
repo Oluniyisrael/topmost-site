@@ -332,6 +332,9 @@ body{
 
 /* responsive desgin */
 @media screen and (max-width: 1000px){
+    *{
+        font-family: tahoma;
+    }
     .topnav {
         height: 30px;
         font-size: 15px;
