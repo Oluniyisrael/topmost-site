@@ -12,7 +12,7 @@ function isCorrect() {
         .then(response => response.json())
         .then(data => {
             if (username === '' || password === '') {
-                alert('Fill user name and password please')
+                alert("Fill student's user name and password please")
             }
             else{
                 
@@ -37,5 +37,13 @@ function isCorrect() {
        
 }
 
-
+var enterSubmit = (e) =>{
+    if(e.key === 'Enter'){
+      isCorrect()
+    }
+    else{ return }
+ }
 document.getElementById('submitButton').addEventListener('click', isCorrect);
+document.getElementById('password').addEventListener('keydown',(e)=>{
+    enterSubmit(e)
+})
