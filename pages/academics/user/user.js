@@ -136,6 +136,7 @@ fetch(database)
 //!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
 //!!!!                      // !!!!!!!!!!!!create a dive to hold sutdents image
                             var imgCont = document.createElement('div')
+                            
                             imgCont.className = 'studentImgCOnt'
                             var studentImg = document.createElement('img');
                             studentImg.className = 'studentResultImg'
