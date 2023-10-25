@@ -149,7 +149,7 @@ fetch(database)
                             //
                             header.appendChild(logo)
                             header.appendChild(h2)
-                            studentInfo.appendChild(info) // to be removed....
+                            // studentInfo.appendChild(info) // to be removed....
                             studentInfo.appendChild(nameOfResult)  
 //
                             //

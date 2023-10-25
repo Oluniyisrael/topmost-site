@@ -11,7 +11,7 @@ width: 100%;
 .topnav{
 height: 50px;
 width: 100%;
-background-color:#6a8e84;
+background-color:#D36582;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -45,7 +45,7 @@ cursor: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #e0d9bc;
+background-color: gold;
 }
 .topnav2 div{
 width: 90%;
@@ -74,7 +74,7 @@ font-family: tahoma;
 display: none;
 justify-content: center;
 align-items: center;
-background-color: #e0d9bc;
+background-color: gold;
 position: sticky;
 top: 0;
 z-index: 9999;
@@ -370,9 +370,10 @@ font-family: tahoma;
     background-color: #944f4593;
 }
 /* end work*/
-.footer{
+.footer {
     width: 100%;
-    background: #1E2F23;
+    border-top: 1px solid white;
+    background: #0b1c47;
     color: white;
 }
 .footer a:link{
